@@ -21,41 +21,35 @@
 - `README.md` - Project documentation.
 
 **Setup Instructions**
-Prerequisites
-Node.js installed on your system.
-Docker (for containerization).
-Git (for cloning the repository).
-Steps to Run the Project Locally
-Clone the repository:
-
-'git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git'
-cd Sample-E-Commers-Project
-Install dependencies:
-
-bash
-Copy code
-npm install
-Run the application:
-
-bash
-Copy code
+***Prerequisites***
+- Node.js installed on your system.
+- Docker (for containerization).
+- Git (for cloning the repository).
+- Steps to Run the Project Locally
+- Clone the repository: git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
+- cd Sample-E-Commers-Project
+  ***Install dependencies:***
+  ```bash
+ npm install
+***Run the application:***
+  ```bash
 node app.js
-Access the application: Open http://localhost:3000 in your browser.
 
-Docker Setup
+- Access the application: Open http://localhost:3000 in your browser.
+
+**Docker Setup**
 Build Docker Image:
 
-bash
-Copy code
+```bash
 docker build -t sample-ecommerce-app .
-Run Docker Container:
 
-bash
-Copy code
+***Run Docker Container:***
+
+```bash
 docker run -d -p 3000:3000 sample-ecommerce-app
-Access the Application: Open http://localhost:3000 in your browser.
+- Access the Application: Open http://localhost:3000 in your browser.
 
-Future Enhancements
+##Future Enhancements##
 Add database integration for user data and cart persistence.
 Deploy the application to the cloud using Terraform.
 Scale to a microservices architecture.
