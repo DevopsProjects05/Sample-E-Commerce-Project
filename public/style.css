@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url('https://t3.ftcdn.net/jpg/08/36/61/72/360_F_836617265_P6yXbsix1McdSZKVRXcZ8r6R9zA2k5L6.jpg'); /* Correct image URL */
+    background-color: #f0f0f0; /* Fallback color */
     background-size: cover; /* Ensures the image covers the entire page */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps the background fixed during scrolling */
