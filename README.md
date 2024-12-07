@@ -36,10 +36,10 @@
     npm install
   
 ***Run the application:***
-  ```bash
-   node app.js
+```bash
+node app.js
 
-- Access the application: Open http://localhost:3000 in your browser.
+- Access the application: Open http://localhost:3000 in your browser
 
 **Docker Setup**
 Build Docker Image:
