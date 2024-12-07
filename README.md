@@ -30,12 +30,11 @@
 - Clone the repository: git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
 - cd Sample-E-Commers-Project
 
-
   ***Install dependencies:***
   ```bash
   npm install
-  
-  ***Run the application:***
+
+***Run the application:***
   node app.js
 
 - Access the application: Open http://localhost:3000 in your browser
@@ -49,11 +48,11 @@ docker build -t sample-ecommerce-app
 ***Run Docker Container:***
 
 ```bash
-  docker run -d -p 3000:3000 sample-ecommerce-app
+docker run -d -p 3000:3000 sample-ecommerce-app
 
 - Access the Application: Open http://localhost:3000 in your browser.
 
-##Future Enhancements##
+***Future Enhancements***
 Add database integration for user data and cart persistence.
 Deploy the application to the cloud using Terraform.
 Scale to a microservices architecture.
