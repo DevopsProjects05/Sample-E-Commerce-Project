@@ -1,4 +1,4 @@
-Sample-E-Commers-Project Application
+# Sample E-commerce Application
 
 
 Project Overview
@@ -42,7 +42,7 @@ Clone the repository:
 bash
 Copy code
 git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project
-cd monolithic-ecommerce
+cd Sample-E-Commers-Project
 Install dependencies:
 
 bash
