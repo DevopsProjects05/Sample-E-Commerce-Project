@@ -1,30 +1,25 @@
 # Sample E-commerce Application
 
-##Project Overview
+## Project Overview
 
-This is a simple e-commerce platform built with:
+- This is a simple e-commerce platform built with:
 
-**Frontend:** HTML, CSS, JavaScript
-**Backend:** Node.js, Express.js
-**DevOps:** Docker, Jenkins, Terraform
-Features
-User authentication
-Product catalog
-Shopping cart functionality
-Project Structure
-php
-Copy code
-'
-/Sample-E-Commers-Project
-   ├── app.js          # Backend application logic
-   ├── package.json    # Node.js dependencies
-   ├── public/         # Frontend assets
-   │     ├── index.html      # Main HTML file
-   │     ├── style.css       # CSS styles
-   │     ├── script.js       # Frontend JavaScript
-   ├── Dockerfile      # Dockerfile to containerize the app
-   ├── docker-compose.yml  # For local development
-   └── README.md       # Documentation '
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **DevOps:** Docker, Jenkins, Terraform
+- ***Features***
+- User authentication
+- Product catalog
+- Shopping cart functionality
+- Project Structure
+  
+**/Sample-E-Commers-Project**
+  - `app.js` - Backend application logic.
+- `package.json` - Node.js dependencies.
+- `Dockerfile` - Dockerfile to containerize the application.
+- `docker-compose.yml` - Docker Compose configuration for local development.
+- `README.md` - Project documentation.
+
 **Setup Instructions**
 Prerequisites
 Node.js installed on your system.
