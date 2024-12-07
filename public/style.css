@@ -1,15 +1,6 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('https://via.placeholder.com/1920x1080');
-    background-color: #f0f0f0; /* Fallback color */
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the background fixed during scrolling */
-    color: white;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Ensures the body takes up the full height of the viewport */
-}
+<body style="background-image: url('https://via.placeholder.com/1920x1080'); background-color: #f0f0f0; background-size: cover; background-position: center; background-attachment: fixed;">
+    <!-- Your content goes here -->
+</body>
 
 header {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
