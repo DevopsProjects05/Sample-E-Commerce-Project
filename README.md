@@ -28,6 +28,8 @@
 - Steps to Run the Project Locally
 - Clone the repository: git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
 - cd Sample-E-Commers-Project
+
+
   ***Install dependencies:***
   ```bash
  npm install
