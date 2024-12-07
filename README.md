@@ -32,7 +32,8 @@
 
   ***Install dependencies:***
   ```bash
- npm install
+    npm install
+  
 ***Run the application:***
   ```bash
 node app.js
