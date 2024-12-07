@@ -21,6 +21,7 @@
 - `README.md` - Project documentation.
 
 **Setup Instructions**
+
 ***Prerequisites***
 - Node.js installed on your system.
 - Docker (for containerization).
@@ -36,7 +37,7 @@
   
 ***Run the application:***
   ```bash
-node app.js
+   node app.js
 
 - Access the application: Open http://localhost:3000 in your browser.
 
@@ -44,12 +45,13 @@ node app.js
 Build Docker Image:
 
 ```bash
-docker build -t sample-ecommerce-app .
+  docker build -t sample-ecommerce-app .
 
 ***Run Docker Container:***
 
 ```bash
-docker run -d -p 3000:3000 sample-ecommerce-app
+  docker run -d -p 3000:3000 sample-ecommerce-app
+
 - Access the Application: Open http://localhost:3000 in your browser.
 
 ##Future Enhancements##
