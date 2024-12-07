@@ -35,9 +35,9 @@
   ```bash
     npm install
   
-***Run the application:***
-```bash
-node app.js
+  ***Run the application:***
+  ```bash
+  node app.js
 
 - Access the application: Open http://localhost:3000 in your browser
 
