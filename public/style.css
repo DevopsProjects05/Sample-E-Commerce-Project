@@ -1,15 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://t3.ftcdn.net/jpg/08/36/61/72/360_F_836617265_P6yXbsix1McdSZKVRXcZ8r6R9zA2k5L6.jpg'); /* Use the correct path */
-    background-size: cover;
-    background-position: center;
+    background-image: url('https://t3.ftcdn.net/jpg/08/36/61/72/360_F_836617265_P6yXbsix1McdSZKVRXcZ8r6R9zA2k5L6.jpg'); /* Correct image URL */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
     color: white;
     margin: 0;
     padding: 0;
+    min-height: 100vh; /* Ensures the body takes up the full height of the viewport */
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
     padding: 10px;
 }
 
@@ -25,7 +27,7 @@ main {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent footer background */
     color: white;
     text-align: center;
     padding: 10px;
