@@ -36,7 +36,6 @@
   npm install
   
   ***Run the application:***
-  ```bash
   node app.js
 
 - Access the application: Open http://localhost:3000 in your browser
@@ -45,7 +44,7 @@
 Build Docker Image:
 
 ```bash
-  docker build -t sample-ecommerce-app .
+docker build -t sample-ecommerce-app
 
 ***Run Docker Container:***
 
