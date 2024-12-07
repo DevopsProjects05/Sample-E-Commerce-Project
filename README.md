@@ -42,12 +42,14 @@
 **Docker Setup**
 - Build Docker Image:
 ```bash
-docker build -t sample-ecommerce-app
+docker build -t sample-ecommerce-app .
+
 
 ***Run Docker Container:***
 
 ```bash
-docker run -d -p 3000:3000 sample-ecommerce-app
+docker run -d -p 3000:3000 sample-ecommerce-app . ```
+
 
 - Access the Application: Open http://localhost:3000 in your browser.
 
