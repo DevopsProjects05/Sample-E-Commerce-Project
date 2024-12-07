@@ -40,8 +40,7 @@
 - Access the application: Open http://localhost:3000 in your browser
 
 **Docker Setup**
-Build Docker Image:
-
+- Build Docker Image:
 ```bash
 docker build -t sample-ecommerce-app
 
