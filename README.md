@@ -41,7 +41,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/monolithic-ecommerce.git
+git clone https://github.com/DevopsProjects05/monolithic-ecommerce.git
 cd monolithic-ecommerce
 Install dependencies:
 
