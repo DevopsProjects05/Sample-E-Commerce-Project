@@ -9,9 +9,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('https://example.com/ecommerce-background.jpg'); /* Replace with actual image */
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient from pink to orange */
     color: white;
 }
 
@@ -61,10 +59,9 @@ footer {
 .lead {
     font-size: 1.2rem;
 
-/* Add margin-top to move the About Us section slightly down */
+/* Left Align About Us section and push it down */
 }
 
-/* Left Align About Us section and push it down */
 .col-md-6.d-flex {
     height: 100%; /* Take full height */
     padding-top: 50px;  /* Adds space from the top */
