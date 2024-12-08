@@ -27,6 +27,8 @@
 - Docker (for containerization).
 - Git (for cloning the repository).
 - Steps to Run the Project Locally
+
+
 # Setting Up the Project
 
 To set up the project on your local machine or server, follow these steps:

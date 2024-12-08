@@ -5,13 +5,14 @@ html, body {
     padding: 0;
 }
 
-/* Body setup for Flexbox */
+/* Body setup for Flexbox with background */
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('https://example.com/ecommerce-background.jpg'); /* Replace with actual image */
+    background-image: url('https://static-blog.omniconvert.com/blog/wp-content/uploads/2020/09/21135804/How-to-do-Growth-of-eCommerce-Website-scaled.jpg'); /* Replace with actual background */
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
     color: white;
 }
 
@@ -60,8 +61,6 @@ footer {
 
 .lead {
     font-size: 1.2rem;
-
-/* Add margin-top to move the About Us section slightly down */
 }
 
 /* Left Align About Us section and push it down */
