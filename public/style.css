@@ -1,30 +1,28 @@
-/* Ensure the body takes the full height of the viewport */
+/* Ensure the body and html take full height of the viewport */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+/* Body setup for Flexbox to make the footer stick to the bottom */
 body {
-    background-image: url('https://www.pexels.com/photo/shallow-focus-photography-of-shopping-cart-3308584/');
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://example.com/ecommerce-background.jpg'); /* Replace with actual image */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     color: white;
 }
 
-
-/* Main content takes the remaining space */
-main.flex-grow-1 {
+/* Ensure the main content grows to fill the remaining space */
+main {
     flex-grow: 1;
 }
 
 /* Footer at the bottom */
 footer {
     margin-top: auto;
-    position: relative;
-    width: 100%;
-    bottom: 0;
 }
 
 h1, h2, h3 {
@@ -63,4 +61,3 @@ footer {
 .lead {
     font-size: 1.2rem;
 }
-
