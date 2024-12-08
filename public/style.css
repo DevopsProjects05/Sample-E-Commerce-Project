@@ -1,30 +1,66 @@
-<body style="background-image: url('https://via.placeholder.com/1920x1080'); background-color: #f0f0f0; background-size: cover; background-position: center; background-attachment: fixed;">
-    <!-- Your content goes here -->
-</body>
-
-header {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-    padding: 10px;
+/* Ensure the body takes the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
+body {
+    background-image: url('https://www.pexels.com/photo/shallow-focus-photography-of-shopping-cart-3308584/');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
 }
 
-main {
-    padding: 50px;
-    text-align: center;
+
+/* Main content takes the remaining space */
+main.flex-grow-1 {
+    flex-grow: 1;
+}
+
+/* Footer at the bottom */
+footer {
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 16px;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent footer background */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
+.lead {
+    font-size: 1.2rem;
 }
 
