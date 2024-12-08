@@ -5,7 +5,7 @@ html, body {
     padding: 0;
 }
 
-/* Body setup for Flexbox to make the footer stick to the bottom */
+/* Body setup for Flexbox */
 body {
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ body {
     color: white;
 }
 
-/* Ensure the main content grows to fill the remaining space */
+/* Main content takes the remaining space */
 main {
     flex-grow: 1;
 }
@@ -60,4 +60,16 @@ footer {
 
 .lead {
     font-size: 1.2rem;
+
+/* Add margin-top to move the About Us section slightly down */
+}
+
+/* Left Align About Us section and push it down */
+.col-md-6.d-flex {
+    height: 100%; /* Take full height */
+    padding-top: 50px;  /* Adds space from the top */
+}
+
+.text-left {
+    text-align: left; /* Align text to the left */
 }
