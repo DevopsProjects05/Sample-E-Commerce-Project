@@ -10,10 +10,17 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url('https://static-blog.omniconvert.com/blog/wp-content/uploads/2020/09/21135804/How-to-do-Growth-of-eCommerce-Website-scaled.jpg'); /* Replace with actual background */
+    background-color: #f0f0f0; /* Fallback color in case the image doesn't load */
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     color: white;
+}
+
+/* Ensure the background covers the entire page */
+body, html {
+    background-size: cover; /* Ensure full coverage */
+    background-position: center; /* Ensure the image is centered */
 }
 
 /* Main content takes the remaining space */
