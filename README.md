@@ -36,6 +36,8 @@ Clone the project repository from GitHub:
 
 ```bash
 ```git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git```
+bash```
+
 cd Sample-E-Commers-Project/
 
 ## Step 2: Install Node Version Manager (NVM)
