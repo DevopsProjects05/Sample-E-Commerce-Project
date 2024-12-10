@@ -5,7 +5,7 @@
 - This is a simple e-commerce platform built with:
 
 - **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Node.js, Express.js
+- **Backend:** Nginix
 - **DevOps:** Docker, Jenkins, Terraform
 - ***Features***
 - User authentication
@@ -23,23 +23,19 @@
 **Setup Instructions**
 
 ***Prerequisites***
-- Node.js installed on your system.
-- Docker (for containerization).
-- Git (for cloning the repository).
-- Steps to Run the Project Locally
+- Install Nginix 
+```sudo yum install nginx -y```
 
 
-# Setting Up the Project
+***Prerequisites***
 
 To set up the project on your local machine or server, follow these steps:
-
----
 
 ## Step 1: Clone the Repository
 Clone the project repository from GitHub:
 
-```bash
-git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
+
+```git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git```
 cd Sample-E-Commers-Project/
 
 ## Step 2: Install Node Version Manager (NVM)
