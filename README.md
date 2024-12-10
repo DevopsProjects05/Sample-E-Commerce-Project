@@ -24,7 +24,8 @@
 
 ***Prerequisites***
 - Install Nginix 
-```sudo yum install nginx -y```
+```bash
+sudo yum install nginx -y
 
 
 ***Prerequisites***
@@ -33,10 +34,8 @@ To set up the project on your local machine or server, follow these steps:
 
 ## Step 1: Clone the Repository
 Clone the project repository from GitHub:
-
 ```bash
-```git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git```
-bash```
+git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
 
 cd Sample-E-Commers-Project/
 
