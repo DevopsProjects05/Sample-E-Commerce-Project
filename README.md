@@ -96,8 +96,9 @@ yum install git -y
 ```bash
 git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
 ```
+```bash
 cd Sample-E-Commers-Project/
-
+```
 ### **NGINX Setup**
 
  **Install NGINX**:
