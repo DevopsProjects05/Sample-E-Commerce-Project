@@ -38,6 +38,21 @@ This is a simple e-commerce webpage project built to demonstrate core **DevOps p
 
 ![Image showing the output of the program](/Sample-E-Commers-Project/githubtools.jpg)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## **Project Structure**
 ```
 Sample-E-Commers-Project/ 
