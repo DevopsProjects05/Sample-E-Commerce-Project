@@ -92,13 +92,13 @@ Follow these steps to set up and run the project locally or on a server.
 yum install git -y
 ```
 
-### **Step 1: Clone the Repository**
+### **Clone the Repository**
 ```bash
 git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
 ```
 cd Sample-E-Commers-Project/
 
-### **Step 2: NGINX Setup**
+### **NGINX Setup**
 
  **Install NGINX**:
   ```bash
