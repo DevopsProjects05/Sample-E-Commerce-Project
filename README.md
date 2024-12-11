@@ -193,4 +193,4 @@ Ensure that port 80 (HTTP) is open to allow incoming traffic.
 ### Access Your Application
 
 - Open your browser and navigate to http://your-server-ip:80
-- Your finalized project should now be served by NGINX.
+- Your finalized project should now be served by NGINX.........
