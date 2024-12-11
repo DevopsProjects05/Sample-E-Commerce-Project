@@ -175,4 +175,16 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
+### Open Firewall Ports
 
+Ensure that port 80 (HTTP) is open to allow incoming traffic.
+
+- **For AWS EC2:**
+
+- Go to your EC2 instance's security group settings.
+- Add an inbound rule to allow HTTP (port 80) traffic.
+
+### Access Your Application
+
+- Open your browser and navigate to http://<your-server-ip>
+- Your finalized project should now be served by NGINX.
