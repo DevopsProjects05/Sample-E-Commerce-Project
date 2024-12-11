@@ -36,6 +36,8 @@ This is a simple e-commerce webpage project built to demonstrate core **DevOps p
 
 ---
 
+![Image showing the output of the program](/Sample-E-Commers-Project/githubtools.jpg)
+
 ## **Project Structure**
 ```
 Sample-E-Commers-Project/ 
@@ -78,6 +80,8 @@ Sample-E-Commers-Project/
   - Provides monitoring and observability for the application and infrastructure.
 
 ---
+
+
 
 ## **Setup Instructions**
 Follow these steps to set up and run the project locally or on a server.
