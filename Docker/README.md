@@ -1,196 +1,78 @@
-# E-Commerce Project
+# Sample E-commerce Application Deployment Using Docker
 
-This is a simple e-commerce webpage project built to demonstrate core **DevOps principles** and tools. The project includes frontend development with static assets and is served using **NGINX** as the backend. The infrastructure is managed using **Docker**, **Jenkins**, **Terraform**, and monitoring is implemented using **Prometheus**.
-
----
-
-## **Project Overview**
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Initially Node.js and Express.js, later replaced with **NGINX** for static file serving.
-- **DevOps Tools:**
-  - **Docker**: Containerization for easy deployment.
-  - **Jenkins**: CI/CD pipeline for automated builds and deployments.
-  - **Terraform**: Infrastructure as Code (IaC) for cloud resource provisioning.
-  - **Prometheus**: Monitoring and observability for the application's performance.
+This guide will help you deploy the Sample E-commerce Application using Docker on an EC2 instance.
 
 ---
 
-## **Project Features**
-1. **Static Frontend**:
-   - Responsive design using **Bootstrap**.
-   - Links to external product catalogs (e.g., Amazon).
-   - Dynamic rendering of product cards using JavaScript.
-   
-2. **Backend with NGINX**:
-   - Serves static assets (HTML, CSS, JS) efficiently.
-   - Configured for optimal performance and reliability.
+## Prerequisites
 
-3. **DevOps Workflow**:
-   - Automated deployment using **Jenkins CI/CD pipelines**.
-   - Dockerized application for consistent builds and deployments.
-   - Infrastructure automation using Terraform for cloud resources.
+1. **AWS EC2 Instance**:
+   - Launch an EC2 instance with the following configuration:
+     - OS: Amazon Linux 2 / Ubuntu 20.04 LTS
+     - Security Group: Allow inbound traffic on ports **22 (SSH)**, **80 (HTTP)**, and **443 (HTTPS)**.
+   - Make sure to have your private key (`.pem`) file to connect to the EC2 instance.
 
-4. **Monitoring with Prometheus**:
-   - Monitor application uptime, response times, and resource usage.
-   - Set up alerts for any performance degradation.
+2. **Tools Installed on EC2**:
+   - **Git** for cloning the repository.
+   - **Docker** for building and running the application.
 
 ---
 
-![Image showing the output of the program](githubtools.jpg)
+## Steps to Deploy
 
-
-## **Project Structure**
-```
-Sample-E-Commers-Project/ 
-├── index.html                          # Main HTML file for the webpage 
-├── public/                             # Static assets 
-  ├── styles.css                        # CSS styles 
-  ├── script.js                         # JavaScript for dynamic rendering   
-├── server.js                           # (Initially Node.js backend, now replaced by NGINX) 
-├── Dockerfile                          # Docker configuration for containerizing the project 
-├── Jenkinsfile                         # CI/CD pipeline configuration 
-├── prometheus/                         # Prometheus configuration files │ 
-├── prometheus.yml                      # Prometheus configuration file │ 
-└── alerts.yml                          # Alerts configuration 
-├── terraform/                          # Terraform scripts for cloud infrastructure │ 
-  ├── main.tf                           # Main Terraform configuration file │ 
-  ├── variables.tf                      # Variables for infrastructure parameters │ 
-  └── outputs.tf                        # Outputs for infrastructure details 
-└── README.md                           # Project documentation
-```
-
----
-
-## **Technologies Used**
-### **Frontend**
-- **HTML/CSS**: For creating a responsive UI.
-- **JavaScript**: For dynamic rendering of content.
-- **Bootstrap**: For responsive design and styling.
-
-### **Backend**
-- **NGINX**: Used as a static file server for the application.
-
-### **DevOps Tools**
-- **Docker**:
-  - Containerized the application for easy portability and consistent environments.
-- **Jenkins**:
-  - Configured CI/CD pipelines for automated testing and deployments.
-- **Terraform**:
-  - Automates infrastructure setup, such as deploying servers or cloud resources.
-- **Prometheus**:
-  - Provides monitoring and observability for the application and infrastructure.
-
----
-
-## **Setup Instructions**
-Follow these steps to set up and run the project locally or on a server.
-
-**Pre-Requities**
-- Git Should be installed
-
+Once **Access Your EC2 Instance** Switch to sudo privilege:
 ```bash
-yum install git -y
+sudo su -
 ```
-
-### **Clone the Repository**
+**Update your server**
+```bash
+sudo yum update -y   # For Amazon Linux
+sudo apt update -y   # For Ubuntu
+```
+**Install Required Packages**
+- Install Git and Docker
+```bash
+sudo yum install git docker -y   # For Amazon Linux
+sudo apt install git docker.io -y   # For Ubuntu
+```
+**Start the Docker service**
+```bash
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+**Clone the Repository**
+- Clone the project repository to your instance
 ```bash
 git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
 ```
+- Navigate to the Docker directory
 ```bash
-cd Sample-E-Commers-Project/
+cd /root/Sample-E-Commers-Project/Docker
 ```
-### **NGINX Setup**
-
- **Install NGINX**:
-  ```bash
-  sudo yum update -y
-   ```
-  ```
-  sudo yum install nginx -y
-  ```
-  **Start the NGINX Service:**
-  ```
-  sudo systemctl start nginx
-  ```
-  ```
-sudo systemctl enable nginx
+**Build the Docker Image**
+```bash
+docker build -t nginx-image .
 ```
-- Verify NGINX is running:
- ```
- sudo systemctl status nginx
- ```
-- Open your browser and navigate to your server's IP address (http://<your-server-ip>). You should see the default NGINX welcome page. 
+- `nginx-image` is the name of the Docker image.
+- The `.` represents the current directory.
 
-## Configure NGINX to Serve Your Application
-
-### Move Your Files to the NGINX Web Root:
-- NGINX serves static files from `/usr/share/nginx/html` by default.
-
-- Move your project files (HTML, CSS, and JS) to this directory:
-
-**Move project files to the NGINX web root:**
-  ```bash
-  sudo mv * /usr/share/nginx/html/
-  ```
-#### Ensure the directory contains:
-
+**Verify the Docker Image**
+- List all Docker images to confirm the image was created successfully.
+```BASH
+docker images
 ```
-/usr/share/nginx/html/
-├── index.html
-├── public/
-│   ├── styles.css
-│   └── script.js
+**Run the Docker Container**
+- Create and start a Docker container from the image
+```bash
+docker run -d --name nginx-container -p 80:80 nginx-image
 ```
-#### Edit the NGINX Configuration File (If you modify)
+- `-d`: Run the container in detached mode.
+- `--name`: Name the container as ***nginx-container***.
+- `-p 80:80`: Map port 80 in the container to port 8080 on the host.
 
-- Open the NGINX configuration file
+Access Your Website
+- Now try to access your website
+```bash
+http://<your-public-ip>:80
 ```
-sudo nano /etc/nginx/nginx.conf
-```
-- Modify the server block to point to your files:
-```
-server {
-    listen 80;
-    server_name localhost;
-
-    root /usr/share/nginx/html;             # Path to your project files
-    index index.html;                       # Default file to load
-
-    location / {
-        try_files $uri /index.html;         # Serve the application
-    }
-
-    location /public/ {
-        root /usr/share/nginx/html;         # Serve static assets like CSS and JS
-    }
-
-    error_page 404 /404.html;               # Optional: Custom 404 page
-}
-
-```
-- Save and exit (Ctrl+O, Enter, Ctrl+X).
-
-#### Test the NGINX Configuration:
-
-- Before reloading NGINX, ensure the configuration is correct:
-```
-sudo nginx -t
-```
-- If there are no errors, reload NGINX to apply the changes:
-```
-sudo systemctl reload nginx
-```
-
-### Open Firewall Ports
-
-Ensure that port 80 (HTTP) is open to allow incoming traffic.
-
-- **For AWS EC2:**
-
-- Go to your EC2 instance's security group settings.
-- Add an inbound rule to allow HTTP (port 80) traffic.
-
-### Access Your Application
-
-- Open your browser and navigate to http://your-server-ip:80
-- Your finalized project should now be served by NGINX.........
+- **Note:** Ensure you do not use HTTPS (https://) in the URL, as the application is not configured for HTTPS.
