@@ -1,0 +1,82 @@
+/* Ensure the body and html take full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body setup for Flexbox with background */
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://static-blog.omniconvert.com/blog/wp-content/uploads/2020/09/21135804/How-to-do-Growth-of-eCommerce-Website-scaled.jpg'); /* Replace with actual background */
+    background-color: #f0f0f0; /* Fallback color in case the image doesn't load */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Ensure the background covers the entire page */
+body, html {
+    background-size: cover; /* Ensure full coverage */
+    background-position: center; /* Ensure the image is centered */
+}
+
+/* Main content takes the remaining space */
+main {
+    flex-grow: 1;
+}
+
+/* Footer at the bottom */
+footer {
+    margin-top: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+}
+
+/* Left Align About Us section and push it down */
+.col-md-6.d-flex {
+    height: 100%; /* Take full height */
+    padding-top: 50px;  /* Adds space from the top */
+}
+
+.text-left {
+    text-align: left; /* Align text to the left */
+}
+
