@@ -68,7 +68,7 @@ docker run -d --name nginx-container -p 80:80 nginx-image
 ```
 - `-d`: Run the container in detached mode.
 - `--name`: Name the container as ***nginx-container***.
-- `-p 80:80`: Map port 80 in the container to port 8080 on the host.
+- `-p 80:80`: Map port 80 in the container to port 80 on the host.
 
 Access Your Website
 - Now try to access your website
