@@ -78,4 +78,4 @@ http://<your-public-ip>:80
 - **Note:** Ensure you do not use HTTPS (https://) in the URL, as the application is not configured for HTTPS.
 
 You will be able to see the below output:
-![](/Sample-E-Commers-Project/Webpage.jpg)
+![](/Docker/Webpage.jpg)
