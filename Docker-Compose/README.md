@@ -89,7 +89,7 @@ http://<your-public-ip>:80
 - **Note**: Ensure you do not use https://, as the application is not configured for HTTPS.
 
 ## You will be able to see the below output:
-![](/Sample-E-Commers-Project/Docker-Compose/Webpage.jpg)
+![](/Docker-Compose/Webpage.jpg)
 
 ### Contributing
 Feel free to fork this repository and submit pull requests. Contributions are welcome!
