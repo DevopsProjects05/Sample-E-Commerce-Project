@@ -18,6 +18,18 @@ This guide will help you deploy the Sample E-commerce Application using Docker o
 
 ---
 
+## **Project Structure**
+```
+├── Docker                              # Docker configuration for containerizing the project 
+  ├── Dockerfile
+├── index.html                          # Main HTML file for the webpage 
+├── public/                             # Static assets 
+  ├── styles.css                        # CSS styles 
+  ├── script.js                         # JavaScript for dynamic rendering   
+├── server.js                           # (Initially Node.js backend, now replaced by NGINX)     
+                      
+```
+
 ## Steps to Deploy
 
 Once **Access Your EC2 Instance** Switch to sudo privilege:

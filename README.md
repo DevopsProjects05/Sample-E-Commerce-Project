@@ -47,13 +47,14 @@ Sample-E-Commers-Project/
   ├── styles.css                        # CSS styles 
   ├── script.js                         # JavaScript for dynamic rendering   
 ├── server.js                           # (Initially Node.js backend, now replaced by NGINX) 
-├── Dockerfile                          # Docker configuration for containerizing the project 
+├── Docker                              # Docker configuration for containerizing the project 
+  ├── Dockerfile                                                               
 ├── Jenkinsfile                         # CI/CD pipeline configuration 
-├── prometheus/                         # Prometheus configuration files │ 
-├── prometheus.yml                      # Prometheus configuration file │ 
+├── prometheus/                         # Prometheus configuration files 
+├── prometheus.yml                      # Prometheus configuration file  
 └── alerts.yml                          # Alerts configuration 
 ├── terraform/                          # Terraform scripts for cloud infrastructure │ 
-  ├── main.tf                           # Main Terraform configuration file │ 
+  ├── main.tf                           # Main Terraform configuration file  
   ├── variables.tf                      # Variables for infrastructure parameters │ 
   └── outputs.tf                        # Outputs for infrastructure details 
 └── README.md                           # Project documentation
@@ -193,4 +194,7 @@ Ensure that port 80 (HTTP) is open to allow incoming traffic.
 ### Access Your Application
 
 - Open your browser and navigate to http://your-server-ip:80
-- Your finalized project should now be served by NGINX.........
+- Your finalized project should now be served by NGINX.
+---
+
+**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker)**
