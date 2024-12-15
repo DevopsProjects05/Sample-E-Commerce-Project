@@ -1,0 +1,12 @@
+version: '3.8'                  # Specify the Compose file format version
+
+services:
+  nginx:
+    build:
+      context: .                # Use the Dockerfile in the current directory
+    ports:
+      - "80:80"                 # Map container's port 80 to host's port 80
+    volumes:
+       - ./index.html:/usr/share/nginx/html/index.html   # Mount the local index.html file to NGINX's web root
+       - ./public:/usr/share/nginx/html/public           # Mount the local public folder to Nginx public folder
+    restart: always            # Automatically restart the container if it stops

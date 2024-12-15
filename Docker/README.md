@@ -1,6 +1,6 @@
 # Sample E-commerce Application Deployment Using Docker
 
-This guide will help you deploy the Sample E-commerce Application using Docker on an EC2 instance.
+This guide will help you deploy the **Sample E-commerce Application** using Docker on an EC2 instance.
 
 ---
 
@@ -9,7 +9,7 @@ This guide will help you deploy the Sample E-commerce Application using Docker o
 1. **AWS EC2 Instance**:
    - Launch an EC2 instance with the following configuration:
      - OS: Amazon Linux 2 / Ubuntu 20.04 LTS
-     - Security Group: Allow inbound traffic on ports **22 (SSH)**, **80 (HTTP)**, and **443 (HTTPS)**.
+     - Security Group: Allow inbound traffic on ports **22 (SSH)**, **80 (HTTP)**,
    - Make sure to have your private key (`.pem`) file to connect to the EC2 instance.
 
 2. **Tools Installed on EC2**:
@@ -91,3 +91,9 @@ http://<your-public-ip>:80
 
 ## You will be able to see the below output:
 ![](/Docker/Webpage.jpg)
+
+### Contributing
+Feel free to fork this repository and submit pull requests. Contributions are welcome!
+```bash
+This **README.md** provides all necessary details to deploy your project using Docker. Let me know if you want to add more specific details or make further modifications! 🚀`
+```
