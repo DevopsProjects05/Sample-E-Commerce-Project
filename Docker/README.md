@@ -94,8 +94,8 @@ http://<your-public-ip>:80
 
 ### Contributing
 Feel free to fork this repository and submit pull requests. Contributions are welcome!
-```bash
-This **README.md** provides all necessary details to deploy your project using Docker. Let me know if you want to add more specific details or make further modifications! 🚀`
-```
+
+**`This **README.md** provides all necessary details to deploy your project using Docker. Let me know if you want to add more specific details or make further modifications! 🚀 `**
+
 
 **[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker-Compose)**
