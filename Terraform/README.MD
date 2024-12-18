@@ -79,11 +79,13 @@ terraform apply -auto-approve
 
 # Accessing the Web Server
 1.Find the Public **IP Address** of the EC2 instance from the Terraform output or AWS Console.
+
 2.Open your browser and navigate to:
 ```bash
 http://<public-ip>
 ```
-3.You should see the web content from the cloned GitHub repository.
+3.You should see the below webpage.
+![](/Sample-E-Commers-Project/Terraform/Webpage.jpg)
 
 ## Cleanup
 To delete the resources created by Terraform:
