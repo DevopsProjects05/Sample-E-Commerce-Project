@@ -5,6 +5,8 @@ This repository demonstrates how to integrate **HashiCorp Vault** with **Terrafo
 
 ---
 
+![](/Sample-E-Commers-Project/Terraform-with-Vault/tf-vault.jpg)
+
 ## **Features**
 - **Secure Secrets Management**:
   - AWS credentials are dynamically fetched from HashiCorp Vault's AWS Secrets Engine.
