@@ -1,6 +1,6 @@
 provider "vault" {
   address = "http://<vault-server-ip>:8200" # Replace with your Vault server address
-  token   = var.vault_token                # Token from environment or tfvars
+  token   = var.token             # Token from environment or tfvars
 }
 
 provider "aws" {

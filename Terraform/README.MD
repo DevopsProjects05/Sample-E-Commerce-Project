@@ -16,6 +16,8 @@ This repository contains Terraform code to provision an **AWS EC2 instance** run
 
 ---
 
+![](/Terraform/tf-aws.jpg)
+
 ## **Prerequisites**
 1. Install **[Terraform](https://spacelift.io/blog/how-to-install-terraform)**.
 2. Install Git
