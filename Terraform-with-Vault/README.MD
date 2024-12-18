@@ -1,6 +1,7 @@
-# Terraform + Vault Integration to Deploy AWS EC2 Instance
 
-This repository demonstrates how to integrate **HashiCorp Vault** with **Terraform** to provision an AWS EC2 instance. Vault is used to securely fetch dynamic AWS credentials, which Terraform then uses to deploy the EC2 instance.
+# Terraform + Vault Integration to Deploy Sample E-Commerce Website
+
+This repository demonstrates how to integrate **HashiCorp Vault** with **Terraform** to deploy a sample e-commerce website on an AWS EC2 instance. Vault is used to securely fetch dynamic AWS credentials, which Terraform then uses to provision the EC2 instance and configure the web server to host the application.
 
 ---
 
