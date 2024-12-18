@@ -107,10 +107,10 @@ Configure AWS Root Credentials:
 ## 2. Setting Up Terraform
 1. **Clone the Repository:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project
     ```
     ```bash
-    cd <repository-directory>
+    cd Terraform-with-Vault
     ```
 2. **Add the following content:**
     ```bash
@@ -157,7 +157,7 @@ Configure AWS Root Credentials:
 ## Preview of the Deployed Web Application
 **Once the Terraform with vault deployment completes, navigate to the public IP address of your instance in the browser (e.g., http://<public-ip>)**
 
-![](/Terraform with Vault/Webpage.jpg)
+![](/Terraform-with-Vault/Webpage.jpg)
 
 ## Cleanup
 To delete the resources created by Terraform:
