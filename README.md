@@ -36,7 +36,7 @@ This is a simple e-commerce webpage project built to demonstrate core **DevOps p
 
 ---
 
-![Image showing the output of the program](/Tools used.jpg)
+![Image showing the output of the program](/Tools-used.jpg)
 
 
 ## **Project Structure**
