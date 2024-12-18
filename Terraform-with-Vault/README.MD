@@ -156,7 +156,7 @@ Configure AWS Root Credentials:
 - AWS credentials are not stored in the codebase or environment, ensuring secure operations.
 
 ## Preview of the Deployed Web Application
-**Once the Terraform with vault deployment completes, navigate to the public IP address of your instance in the browser (e.g., http://<public-ip>)**
+**Once the Terraform with vault deployment completes, navigate to the public IP address of your instance in the browser**
 
 ![](/Terraform-with-Vault/Webpage.jpg)
 
@@ -189,17 +189,25 @@ vault list aws/creds
 
 ## Key Files
 `main.tf`: Terraform configuration for Vault integration and EC2 provisioning.
+
 `variables.tf`: Variables for Terraform configuration.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+---
 
-```
-### **Details Added**
-1. Complete Vault setup instructions, including installation, configuration, and AWS Secrets Engine setup.
-2. Terraform setup steps with precise commands.
-3. Troubleshooting for Vault, Terraform, and AWS.
-4. Cleanup instructions and expected outcomes.
 
-This README now provides comprehensive instructions for someone to successfully run this project without prior knowledge. Let me know if you’d like additional refinements! 🚀
-````
+## **Summary of Steps**
+
+1. **Complete Vault Setup**:
+   - Instructions for installing Vault, configuring the AWS Secrets Engine, and setting up roles.
+2. **Terraform Configuration**:
+   - Detailed steps to initialize, validate, plan, and apply Terraform configurations.
+3. **Troubleshooting**:
+   - Covers common issues and solutions for Vault, Terraform, and AWS.
+4. **Cleanup Instructions**:
+   - Steps to tear down resources after testing.
+5. **Expected Outcomes**:
+   - Describes the deployed infrastructure and how to access it.
+
+
+**`This README now provides comprehensive instructions for someone to successfully run this project without prior knowledge. Let me know if you’d like additional refinements! 🚀`**
+
