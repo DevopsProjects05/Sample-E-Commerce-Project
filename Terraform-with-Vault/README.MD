@@ -5,7 +5,7 @@ This repository demonstrates how to integrate **HashiCorp Vault** with **Terrafo
 
 ---
 
-![](/Sample-E-Commers-Project/Terraform-with-Vault/tf-vault.jpg)
+![](/Terraform-with-Vault/tf-vault.jpg)
 
 ## **Features**
 - **Secure Secrets Management**:
