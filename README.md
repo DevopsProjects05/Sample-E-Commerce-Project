@@ -197,4 +197,11 @@ Ensure that port 80 (HTTP) is open to allow incoming traffic.
 - Your finalized project should now be served by NGINX.....
 ---
 
+### Contributing
+Feel free to fork this repository and submit pull requests. Contributions are welcome!
+
 **[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker)**
+
+**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker-Compose)**
+
+**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker-Compose)**
