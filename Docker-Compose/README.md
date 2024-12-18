@@ -89,7 +89,7 @@ http://<your-public-ip>:80
 - **Note**: Ensure you do not use https://, as the application is not configured for HTTPS.
 
 ## Here’s What You Should See
-After navigating to the public IP address of your EC2 instance in the browser, you should see a webpage similar to the one below:
+**After navigating to the public IP address of your EC2 instance in the browser, you should see a webpage similar to the one below:**
 
 ![](/Docker-Compose/Webpage.jpg)
 

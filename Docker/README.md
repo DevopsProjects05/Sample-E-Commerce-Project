@@ -91,7 +91,7 @@ http://<your-public-ip>:80
 
 ## Deployed Web Application Preview
 
-After navigating to the public IP address of your EC2 instance in the browser, you should see a webpage similar to the one below:
+**After navigating to the public IP address of your EC2 instance in the browser, you should see a webpage similar to the one below:**
 
 ![](/Docker/Webpage.jpg)
 

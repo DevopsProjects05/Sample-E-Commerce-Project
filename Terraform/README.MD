@@ -86,7 +86,7 @@ http://<public-ip>
 ```
 ## Expected Webpage Output
 
-After navigating to the public IP address of your EC2 instance in the browser, you should see a webpage similar to the one below: 
+**After navigating to the public IP address of your EC2 instance in the browser, you should see a webpage similar to the one below:** 
 
 ![](/Terraform/Webpage.jpg)
 
