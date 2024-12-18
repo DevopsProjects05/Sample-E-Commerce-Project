@@ -157,7 +157,7 @@ Configure AWS Root Credentials:
 ## Preview of the Deployed Web Application
 **Once the Terraform with vault deployment completes, navigate to the public IP address of your instance in the browser (e.g., http://<public-ip>)**
 
-![](/Sample-E-Commers-Project/Terraform%20with%20Vault/Webpage.jpg)
+![](/Terraform with Vault/Webpage.jpg)
 
 ## Cleanup
 To delete the resources created by Terraform:
