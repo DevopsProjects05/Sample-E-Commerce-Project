@@ -1,10 +1,10 @@
 variable "access_key" {
-  default = "AKIARHQBNQH4UEZAZNGI"
+  default = "YOUR-ACCESS-KEY"
 
 }
 
 variable "secret_key" {
-  default = "CcQvwUbeO8QQJasB0Z6uhRNTUU3etmcmHuLItLYj"
+  default = "YOUR-SECRET-KEY"
 
 }
 
@@ -15,9 +15,9 @@ variable "region" {
 
 variable "key_pair" {
   description = "The name of the AWS key pair for SSH access"
-  default     = "DevOps_Practice" # Replace with your key pair
+  default     = "YOUR-KEYPAIR-NAME" # Replace with your key pair
 }
 
 variable "ami" {
-  default = "ami-0fd05997b4dff7aac"
+  default = "AMI-ID"    #Replace with your ami id
 }
