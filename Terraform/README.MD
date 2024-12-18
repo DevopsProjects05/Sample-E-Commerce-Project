@@ -84,8 +84,11 @@ terraform apply -auto-approve
 ```bash
 http://<public-ip>
 ```
-3.You should see the below webpage.
-![](/Sample-E-Commers-Project/Terraform/Webpage.jpg)
+## Expected Webpage Output
+
+After navigating to the public IP address of your EC2 instance in the browser, you should see a webpage similar to the one below: 
+
+![](/Terraform/Webpage.jpg)
 
 ## Cleanup
 To delete the resources created by Terraform:

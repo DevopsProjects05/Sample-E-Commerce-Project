@@ -89,7 +89,10 @@ http://<your-public-ip>:80
 ```
 - **Note:** Ensure you do not use HTTPS (https://) in the URL, as the application is not configured for HTTPS.
 
-## You will be able to see the below output:
+## Deployed Web Application Preview
+
+After navigating to the public IP address of your EC2 instance in the browser, you should see a webpage similar to the one below:
+
 ![](/Docker/Webpage.jpg)
 
 ### Contributing
