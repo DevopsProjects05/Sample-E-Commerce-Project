@@ -83,9 +83,11 @@ This is a **Simple e-commerce project** designed to showcase core **DevOps princ
 ---
 
 ## DevOps Tools Stack
+---
 
 ![Image showing the output of the program](/Tools-used1.jpg)
 
+---
 
 ## **Project Structure**
 ---
