@@ -44,6 +44,29 @@ This repository demonstrates how to integrate **HashiCorp Vault** with **Terrafo
 
 ---
 
+## Architecture Diagram
+**Below is the architecture diagram for this project:**
+
+
+
+![](/Terraform-with-Vault/tf-vault-daigram.jpg)
+
+## Flow of Information
+- **Vault → Terraform:**
+
+- Terraform fetches dynamic AWS credentials from Vault.
+
+- **Terraform → AWS:**
+
+- Terraform uses the credentials to create the EC2 instance and security group.
+
+- **User → EC2 Instance:**
+
+- The user accesses the application via HTTP/HTTPS.
+
+---
+
+
 ## **Step-by-Step Instructions**
 
 ### **1. Setting Up Vault**
