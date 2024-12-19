@@ -35,60 +35,50 @@ This is a **Simple e-commerce project** designed to showcase core **DevOps princ
 
 3. **DevOps Workflow**:
 
-    **1.Jenkins**
-   
-    -  **Jenkins Integration**
-   
-         - Automated the CI/CD process using Jenkins pipelines.
-        - Configured Jenkins jobs to pull code from GitHub and deploy changes to the server.
-        - Added security and quality checks using SonarQube in the pipeline.
-  
-    **2.Terraform**
+    **1. Automated Code Management with Git:**
 
-      - **Terraform Integration**
-    
-        - Automated the provisioning of cloud resources using Terraform.
-        - Integrated Terraform with Vault to securely fetch AWS credentials for deploying infrastructure.
-      
-    **3.Hashicorp Vault**
-    - **Secrets Management with Vault**
+      - All project files and configurations are version-controlled using Git.
+      - Hosted on GitHub for easy collaboration and CI/CD pipeline integration.
+
+    **2. Automated Build and Deployment with Jenkins:**
+
+     -  Jenkins is configured to pull code changes from the GitHub repository.
+     - Jenkins triggers the build process using the Dockerfile and other deployment scripts.
+     - Supports automated deployment to staging and production environments.
      
-       - Used HashiCorp Vault to securely manage AWS credentials.
-       - Configured Terraform to fetch secrets dynamically from Vault during deployment.
-       
-    **4.Prometheus**
+    **3. Containerization with Docker:**
 
-      - **Monitoring and Observability**:
-   
-        - Configured Prometheus to collect application metrics and monitor resource usage.
-        - Set up Grafana dashboards to visualize metrics for better observability.
+     - The application is containerized using a Dockerfile, ensuring consistency across different environments.
+      - The Docker image is created and stored locally or pushed to a container registry for deployment.
   
-    **5.SonarQube**
+    **4. Infrastructure Automation with Terraform:**
 
-      - **Code Quality and Security**
-         - Incorporated SonarQube in the CI/CD pipeline for code analysis and quality checks.
-         - Ensured code adheres to industry standards and best practices.
-
-    **6.Ansible**
-
-      - **Configuration Management**
+    - Cloud resources, such as EC2 instances, security groups, and networking, are provisioned using Terraform.
+    - Secrets management for Terraform is integrated with HashiCorp Vault.
   
-         - Used Ansible to automate server configuration and deployment tasks.
-         - Configured NGINX and other dependencies using Ansible playbooks.
+    **5. Secrets Management with HashiCorp Vault:**
 
-    **7.Trivy**
-        
-      - **Security and Vulnerability Scanning with Trivy**
-        - Used **Trivy** to scan Docker images for vulnerabilities and misconfigurations.
-        - Integrated Trivy into the CI/CD pipeline for automated security checks during the build phase.
-        - Ensured secure deployment of containers by resolving critical vulnerabilities.
+    - Vault is used to securely manage and provide dynamic secrets for the application and infrastructure.
+    - Terraform pulls sensitive credentials (e.g., AWS keys) directly from Vault.
+    
+   **6. Code Quality Assurance with SonarQube:**
 
-    **8.TSEC (Terraform Security Checks)**
-      - **Infrastructure Security with TSEC**
-        - Used **TSEC** to perform static analysis on Terraform code to identify security risks and misconfigurations.
-        - Integrated TSEC checks as part of the infrastructure provisioning pipeline to ensure compliance with security best practices.
-        - Fixed issues related to open ports, insecure AWS IAM policies, and other security concerns.
+      - SonarQube analyzes the code for bugs, vulnerabilities, and code smells.
+      - Ensures high code quality before deployment.
 
+    **7. Security and Vulnerability Scanning:**
+
+      - Trivy scans Docker images for vulnerabilities.
+      - TSEC (Terraform Security Checks) ensures the infrastructure code follows best practices.
+
+    **8. Monitoring and Observability with Prometheus:**
+
+      - Application and infrastructure metrics are collected and visualized.
+      - Alerts are configured for performance or availability issues.
+      
+    **9. Configuration Management with Ansible:**
+
+      - Ansible is used for automating server configuration and application deployment.
 
 ---
 
