@@ -97,35 +97,29 @@ This is a **Simple e-commerce project** designed to showcase core **DevOps princ
 
 ## **Project Structure**
 ---
-Sample-E-Commers-Project/
-├── Docker/                           # Docker-related configurations
-│   ├── Dockerfile                    # Dockerfile for containerizing the app
-│   ├── docker-compose.yml            # Docker Compose configuration
-│   └── volumes/                      # Docker volume-related data
-├── Terraform/                        # Terraform configurations
-│   ├── main.tf                       # Main configuration file
-│   ├── variables.tf                  # Input variables
-│   ├── outputs.tf                    # Outputs definition
-│   └── provider.tf                   # Cloud provider configuration
-├── Terraform-with-vault/             # HashiCorp Vault configurations
-│   ├── main.tf                       # Main configuration with vault file
-│   ├── variables.tf                 
-│   └── outputs.tf                    
-├── Prometheus/                       # Prometheus configurations
-│   ├── prometheus.yml                # Prometheus main configuration
-│   └── alerts.yml                    # Prometheus alerting rules
-├── public/                           # Frontend static files
-│   ├── script.js                     # JavaScript for dynamic rendering
-│   └── style.css                     # CSS styles
-├── index.html                        # Main HTML file
-├── server.js                         # Node.js server file (or alternative backend setup)
-├── Jenkinsfile                       # Jenkins pipeline configuration
-├── SonarQube/                        # SonarQube configuration (optional)
-│   ├── sonar-project.properties      # SonarQube project settings
-├── README.md                         # Project documentation
-                   
-                   
-
+```
+Sample-E-Commers-Project/ 
+├── index.html                          # Main HTML file for the webpage 
+├── public/                             # Static assets 
+  ├── styles.css                        # CSS styles 
+  ├── script.js                         # JavaScript for dynamic rendering   
+├── server.js                           # (Initially Node.js backend, now replaced by NGINX) 
+├── Docker                              # Docker configuration for containerizing the project 
+  ├── Dockerfile                                                               
+├── Jenkinsfile                         # CI/CD pipeline configuration 
+├── prometheus/                         # Prometheus configuration files 
+  ├── prometheus.yml                    # Prometheus configuration file  
+  └── alerts.yml                        # Alerts configuration 
+├──Terraform/                           # Terraform scripts for cloud infrastructure │ 
+  ├── main.tf                           # Main Terraform configuration file  
+  ├── variables.tf                      # Variables for infrastructure parameters │ 
+  └── outputs.tf                        # Outputs for infrastructure details 
+├──Terraform-with-Vault                 # Terraform-with-vault scripts for cloud infrastructure & vault to fetch keys │ 
+  ├── main.tf                           # Main Terraform-with-vault configuration file & fetch data from vault  
+  ├── variables.tf                      # Variables for infrastructure parameters, tocken and keys │ 
+  └── outputs.tf
+└── README.md                           # Project documentation
+```
 
 ---
 
