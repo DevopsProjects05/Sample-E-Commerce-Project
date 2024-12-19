@@ -47,13 +47,13 @@ This is a **Simple e-commerce project** designed to showcase core **DevOps princ
 
       - **Terraform Integration**
     
-        - Automated the provisioning of cloud resources (e.g., EC2 instances, S3 buckets) using Terraform.
+        - Automated the provisioning of cloud resources using Terraform.
         - Integrated Terraform with Vault to securely fetch AWS credentials for deploying infrastructure.
       
     **3.Hashicorp Vault**
     - **Secrets Management with Vault**
      
-       - Used HashiCorp Vault to securely manage AWS credentials and other sensitive data.
+       - Used HashiCorp Vault to securely manage AWS credentials.
        - Configured Terraform to fetch secrets dynamically from Vault during deployment.
        
     **4.Prometheus**
