@@ -1,6 +1,6 @@
 # E-Commerce Project
 
-This is a simple e-commerce webpage project built to demonstrate core **DevOps principles** and tools. The project includes frontend development with static assets and is served using **NGINX** as the backend. The infrastructure is managed using **Docker**, **Jenkins**, **Terraform**, and monitoring is implemented using **Prometheus**.
+This is a **Simple e-commerce project** designed to showcase core **DevOps principles** and tools. The project includes **frontend development** with static assets, served using **NGINX** as the backend. It demonstrates a complete DevOps lifecycle with tools like **Docker, Jenkins, Terraform, HashiCorp Vault,** and **Ansible**. The project also incorporates **monitoring, code quality assurance, and security** using **Prometheus, SonarQube, Trivy, and TSEC.**
 
 ---
 
@@ -8,10 +8,18 @@ This is a simple e-commerce webpage project built to demonstrate core **DevOps p
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Initially Node.js and Express.js, later replaced with **NGINX** for static file serving.
 - **DevOps Tools:**
-  - **Docker**: Containerization for easy deployment.
-  - **Jenkins**: CI/CD pipeline for automated builds and deployments.
-  - **Terraform**: Infrastructure as Code (IaC) for cloud resource provisioning.
-  - **Prometheus**: Monitoring and observability for the application's performance.
+  - **Git** - Version control.
+  - **NGINX** - Web server.
+  - **Jenkins** - CI/CD pipeline.
+  - **Docker** - Containerization.
+  - **Docker Compose** - Multi-container orchestration.
+  - **Terraform** - Infrastructure as Code.
+  - **HashiCorp Vault** - Secrets management.
+  - **Prometheus** - Monitoring and observability.
+  - **SonarQube** - Code analysis and quality assurance.
+  - **Ansible** - Configuration management.
+  - **Trivy** - Security and Vulnerability Scanning
+  - **TSEC (Terraform Security Checks)** -  Infrastructure Security.
 
 ---
 
@@ -26,13 +34,61 @@ This is a simple e-commerce webpage project built to demonstrate core **DevOps p
    - Configured for optimal performance and reliability.
 
 3. **DevOps Workflow**:
-   - Automated deployment using **Jenkins CI/CD pipelines**.
-   - Dockerized application for consistent builds and deployments.
-   - Infrastructure automation using Terraform for cloud resources.
 
-4. **Monitoring with Prometheus**:
-   - Monitor application uptime, response times, and resource usage.
-   - Set up alerts for any performance degradation.
+    **1.Jenkins**
+   
+    -  **Jenkins Integration**
+   
+         - Automated the CI/CD process using Jenkins pipelines.
+        - Configured Jenkins jobs to pull code from GitHub and deploy changes to the server.
+        - Added security and quality checks using SonarQube in the pipeline.
+  
+    **2.Terraform**
+
+      - **Terraform Integration**
+    
+        - Automated the provisioning of cloud resources (e.g., EC2 instances, S3 buckets) using Terraform.
+        - Integrated Terraform with Vault to securely fetch AWS credentials for deploying infrastructure.
+      
+    **3.Hashicorp Vault**
+    - **Secrets Management with Vault**
+     
+       - Used HashiCorp Vault to securely manage AWS credentials and other sensitive data.
+       - Configured Terraform to fetch secrets dynamically from Vault during deployment.
+       
+    **4.Prometheus**
+
+      - **Monitoring and Observability**:
+   
+        - Configured Prometheus to collect application metrics and monitor resource usage.
+        - Set up Grafana dashboards to visualize metrics for better observability.
+  
+    **5.SonarQube**
+
+      - **Code Quality and Security**
+         - Incorporated SonarQube in the CI/CD pipeline for code analysis and quality checks.
+         - Ensured code adheres to industry standards and best practices.
+
+    **6.Ansible**
+
+      - **Configuration Management**
+  
+         - Used Ansible to automate server configuration and deployment tasks.
+         - Configured NGINX and other dependencies using Ansible playbooks.
+
+    **7.Trivy**
+        
+      - **Security and Vulnerability Scanning with Trivy**
+        - Used **Trivy** to scan Docker images for vulnerabilities and misconfigurations.
+        - Integrated Trivy into the CI/CD pipeline for automated security checks during the build phase.
+        - Ensured secure deployment of containers by resolving critical vulnerabilities.
+
+    **8.TSEC (Terraform Security Checks)**
+      - **Infrastructure Security with TSEC**
+        - Used **TSEC** to perform static analysis on Terraform code to identify security risks and misconfigurations.
+        - Integrated TSEC checks as part of the infrastructure provisioning pipeline to ensure compliance with security best practices.
+        - Fixed issues related to open ports, insecure AWS IAM policies, and other security concerns.
+
 
 ---
 
@@ -40,25 +96,36 @@ This is a simple e-commerce webpage project built to demonstrate core **DevOps p
 
 
 ## **Project Structure**
-```
-Sample-E-Commers-Project/ 
-├── index.html                          # Main HTML file for the webpage 
-├── public/                             # Static assets 
-  ├── styles.css                        # CSS styles 
-  ├── script.js                         # JavaScript for dynamic rendering   
-├── server.js                           # (Initially Node.js backend, now replaced by NGINX) 
-├── Docker                              # Docker configuration for containerizing the project 
-  ├── Dockerfile                                                               
-├── Jenkinsfile                         # CI/CD pipeline configuration 
-├── prometheus/                         # Prometheus configuration files 
-├── prometheus.yml                      # Prometheus configuration file  
-└── alerts.yml                          # Alerts configuration 
-├── terraform/                          # Terraform scripts for cloud infrastructure │ 
-  ├── main.tf                           # Main Terraform configuration file  
-  ├── variables.tf                      # Variables for infrastructure parameters │ 
-  └── outputs.tf                        # Outputs for infrastructure details 
-└── README.md                           # Project documentation
-```
+---
+Sample-E-Commers-Project/
+├── Docker/                           # Docker-related configurations
+│   ├── Dockerfile                    # Dockerfile for containerizing the app
+│   ├── docker-compose.yml            # Docker Compose configuration
+│   └── volumes/                      # Docker volume-related data
+├── Terraform/                        # Terraform configurations
+│   ├── main.tf                       # Main configuration file
+│   ├── variables.tf                  # Input variables
+│   ├── outputs.tf                    # Outputs definition
+│   └── provider.tf                   # Cloud provider configuration
+├── Terraform-with-vault/             # HashiCorp Vault configurations
+│   ├── main.tf                       # Main configuration with vault file
+│   ├── variables.tf                 
+│   └── outputs.tf                    
+├── Prometheus/                       # Prometheus configurations
+│   ├── prometheus.yml                # Prometheus main configuration
+│   └── alerts.yml                    # Prometheus alerting rules
+├── public/                           # Frontend static files
+│   ├── script.js                     # JavaScript for dynamic rendering
+│   └── style.css                     # CSS styles
+├── index.html                        # Main HTML file
+├── server.js                         # Node.js server file (or alternative backend setup)
+├── Jenkinsfile                       # Jenkins pipeline configuration
+├── SonarQube/                        # SonarQube configuration (optional)
+│   ├── sonar-project.properties      # SonarQube project settings
+├── README.md                         # Project documentation
+                   
+                   
+
 
 ---
 
@@ -71,15 +138,7 @@ Sample-E-Commers-Project/
 ### **Backend**
 - **NGINX**: Used as a static file server for the application.
 
-### **DevOps Tools**
-- **Docker**:
-  - Containerized the application for easy portability and consistent environments.
-- **Jenkins**:
-  - Configured CI/CD pipelines for automated testing and deployments.
-- **Terraform**:
-  - Automates infrastructure setup, such as deploying servers or cloud resources.
-- **Prometheus**:
-  - Provides monitoring and observability for the application and infrastructure.
+
 
 ---
 
