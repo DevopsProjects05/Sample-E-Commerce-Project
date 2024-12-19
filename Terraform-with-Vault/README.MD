@@ -49,7 +49,7 @@ This repository demonstrates how to integrate **HashiCorp Vault** with **Terrafo
 
 
 
-![](/Terraform-with-Vault/tf-with-vault-new.jpg)
+   ![](/Terraform-with-Vault/tf-with-vault-new.jpg)
 
 ## Flow of Information
 - **Vault → Terraform:**
