@@ -1,0 +1,46 @@
+---
+- name: Simple deployment of a project with NGINX and Git
+  hosts: all
+  become: yes
+
+  vars:
+    work_dir: "/usr/share/nginx/html"  # Default working directory for NGINX
+    nginx_conf_path: "/etc/nginx/nginx.conf"  # Path to NGINX configuration file
+    app_repo: "https://github.com/DevopsProjects05/Sample-E-Commers-Project"  # Git repository URL for the project
+
+  tasks:
+    # Update package manager cache to ensure latest package information
+    - name: Updating the server
+      yum:
+        name: "*"
+        state: latest
+        update_cache: yes
+
+    # Install required packages: git and nginx for web server and version control
+    - name: Install Git and NGINX
+      package:
+        name:
+          - git  # Git is needed to clone the repository
+          - nginx  # NGINX is used as the web server
+        state: present
+
+    # Clone project from Git repository to the target directory
+    - name: Clone project repository
+      git:
+        repo: "{{ app_repo }}"  # URL of the project repository
+        dest: "{{ work_dir }}"  # Default directory for serving content in NGINX
+        version: HEAD  # Ensures the latest version is pulled
+
+    # Ensure NGINX service is running and enabled to start on boot
+    - name: Start and enable NGINX
+      service:
+        name: nginx
+        state: started  # Ensure the service is running
+        enabled: yes  # Enable the service to start at boot
+
+  handlers:
+    # Restart NGINX service when configuration changes are made
+    - name: Restart NGINX
+      service:
+        name: nginx
+        state: restarted
