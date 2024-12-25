@@ -187,6 +187,8 @@ Ensure the instance has sufficient resources to run SonarQube smoothly.
 
 ![](/SonarQube/sonar.jpg)
 
+---
+
 ## Notes
 
 - **Instance Type**: SonarQube requires a `t2.medium` instance for optimal performance.
