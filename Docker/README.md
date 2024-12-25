@@ -18,6 +18,27 @@ This guide will help you deploy the **Sample E-commerce Application** using Dock
 
 ---
 
+
+
+
+## Languages and Tools
+
+<p align="left">
+  <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5"/>
+  <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3"/>
+  <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript"/>
+  <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/>
+  <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker"/>
+  <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS"/>
+</p>
+
+
+
+
+---
+
+
+
 ## **Project Structure**
 ```
 ├── Docker                              # Docker configuration for containerizing the project 

@@ -23,6 +23,16 @@ This is a **Simple e-commerce project** designed to showcase core **DevOps princ
 
 ---
 
+## Languages
+
+<p align="left">
+  <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5"/>
+  <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3"/>
+  <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript"/>
+</p>
+
+---
+
 ## **Project Features**
 1. **Static Frontend**:
    - Responsive design using **Bootstrap**.
