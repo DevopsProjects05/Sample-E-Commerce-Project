@@ -185,7 +185,7 @@ Ensure the instance has sufficient resources to run SonarQube smoothly.
 
 ### Screenshot of SonarQube Execution and Results
 
-![](/Sample-E-Commers-Project/SonarQube/sonar.jpg)
+![](/SonarQube/sonar.jpg)
 
 ## Notes
 
