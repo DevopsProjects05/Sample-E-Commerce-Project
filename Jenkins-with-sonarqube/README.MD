@@ -1,8 +1,13 @@
 # Jenkins and SonarQube Setup Guide
 
+---
+
+### Introduction about the project
+
+This project demonstrates the integration of Jenkins and SonarQube to automate code analysis and CI/CD workflows. Jenkins manages the continuous integration process, while SonarQube ensures code quality by identifying issues like bugs, vulnerabilities, and code smells.
+
 This document provides step-by-step instructions to set up Jenkins and SonarQube for automating code analysis and continuous integration.
 
----
 
 ## Architecture Diagram
 **Below is the architecture diagram for this project:**
