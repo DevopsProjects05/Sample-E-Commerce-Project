@@ -236,7 +236,7 @@ Run these commands on the **SonarQube server instance**:
 
 #### YOU WILL BE ABLE TO SEE THE BELOW RESULT PAGE:
 
-![](/Jenkins and-Sonarqube/JEN-SONAR.jpg)
+![](/Jenkins and Sonarqube/JEN-SONAR.jpg)
 
 
 This guide ensures a complete setup of Jenkins and SonarQube for automated code analysis and continuous integration. Let me know if you encounter any issues!
