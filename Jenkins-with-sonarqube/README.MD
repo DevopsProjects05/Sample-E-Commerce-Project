@@ -4,6 +4,14 @@ This document provides step-by-step instructions to set up Jenkins and SonarQube
 
 ---
 
+## Architecture Diagram
+**Below is the architecture diagram for this project:**
+
+---
+![](/Jenkins-with-sonarqube/Jen-sonar-arc)
+
+----
+
 ## **1. Create EC2 Instances**
 
 1. Launch two **Amazon Linux EC2 instances** with the following specifications:
