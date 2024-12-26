@@ -8,7 +8,7 @@ This document provides step-by-step instructions to set up Jenkins and SonarQube
 **Below is the architecture diagram for this project:**
 
 ---
-![](/Jenkins-with-sonarqube/Jen-sonar-arc)
+![](/Jenkins-with-sonarqube/Jen-sonar-arc.jpg)
 
 ----
 
