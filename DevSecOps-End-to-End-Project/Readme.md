@@ -40,23 +40,26 @@ This repository contains an end-to-end **DevSecOps pipeline** that automates the
 ## DevOps Tools Stack
 ---
 
-![](DevSecOps-End-to-End-Project/Tools-used1.jpg)
+![](/DevSecOps-End-to-End-Project/Tools-used1.jpg)
 
 ---
 
-## **Tools and Technologies**
-| **Tool**       | **Purpose**                                       |
-|----------------|---------------------------------------------------|
-| **Git**        | Version control for source code.                  |
-| **Jenkins**    | Orchestrates CI/CD pipelines.                     |
-| **SonarQube**  | Performs static code analysis.                    |
-| **Terraform**  | Provisions infrastructure.                        |
-| **tfsec**      | Validates Terraform code for security issues.     |
-| **Ansible**    | Automates configuration management.               |
-| **Docker**     | Containerizes applications.                       |
-| **Trivy**      | Scans Docker images for vulnerabilities.          |
-| **Prometheus** | Monitors infrastructure and collects metrics.      |
-| **Grafana**    | Visualizes metrics from Prometheus.               |
+## Tools and Technologies
+
+| **Tool**           | **Purpose**                                       |
+|--------------------|---------------------------------------------------|
+| **Git**            | Version control for source code.                  |
+| **Jenkins**        | Orchestrates CI/CD pipelines.                     |
+| **SonarQube**      | Performs static code analysis.                    |
+| **Terraform**      | Provisions infrastructure.                        |
+| **tfsec**          | Validates Terraform code for security issues.     |
+| **Ansible**        | Automates configuration management.               |
+| **Docker**         | Containerizes applications.                       |
+| **Trivy**          | Scans Docker images for vulnerabilities.          |
+| **Prometheus**     | Monitors infrastructure and collects metrics.      |
+| **Grafana**        | Visualizes metrics from Prometheus.               |
+| **NGINX**          | Serves as a web server and reverse proxy for the application. |
+| **HashiCorp Vault**| Manages secrets and sensitive data securely.       |
 
 ---
 
