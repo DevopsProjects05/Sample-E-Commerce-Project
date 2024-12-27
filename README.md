@@ -1,6 +1,6 @@
-# E-Commerce Project
+# Sample E-Commerce Project
 
-This is a **Simple e-commerce project** designed to showcase core **DevOps principles** and tools. The project includes **frontend development** with static assets, served using **NGINX** as the backend. It demonstrates a complete DevOps lifecycle with tools like **Docker, Jenkins, Terraform, HashiCorp Vault,** and **Ansible**. The project also incorporates **monitoring, code quality assurance, and security** using **Prometheus, SonarQube, Trivy, and TSEC.**
+This is a **Sample e-commerce project** designed to showcase core **DevOps principles** and tools. The project includes **frontend development** with static assets, served using **NGINX** as the backend. It demonstrates a complete DevOps lifecycle with tools like **Docker, Jenkins, Terraform, HashiCorp Vault,** and **Ansible**. The project also incorporates **monitoring, code quality assurance, and security** using **Prometheus, SonarQube, Trivy, and TSEC.**
 
 ---
 
@@ -135,10 +135,12 @@ Sample-E-Commers-Project/
 
 ### **Backend**
 - **NGINX**: Used as a static file server for the application.
-
-
-
 ---
+
+# Sample E-Commerce Project
+
+### A Step-by-Step Guide to Setting Up Your Application with NGINX
+
 
 ## **Setup Instructions**
 Follow these steps to set up and run the project locally or on a server.
