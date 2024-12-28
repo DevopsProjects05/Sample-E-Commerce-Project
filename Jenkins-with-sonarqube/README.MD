@@ -19,7 +19,7 @@ This document provides step-by-step instructions to set up Jenkins and SonarQube
 
 ## **1. Create EC2 Instances**
 
-1. Launch two **Amazon Linux EC2 instances** with the following specifications:
+1. Launch `2` **Amazon Linux EC2 instances** with the following specifications:
    - **Instance Type**: `t2.medium`
    - **Security Group**:
      - Port 22 (SSH)
@@ -30,7 +30,7 @@ This document provides step-by-step instructions to set up Jenkins and SonarQube
 
 ## **2. Install Git and Docker**
 
-Run these commands on both instances:
+Run these commands:
 
 ```bash
 sudo yum update -y
@@ -150,6 +150,23 @@ Run these commands on the **Jenkins server instance**:
 ### **SonarQube Server Setup**
 
 Run these commands on the **SonarQube server instance**:
+1. Update Server
+
+      ```bash
+      sudo yum update -y
+      ```
+
+1. Install Docker
+
+   ```bash
+   sudo yum install docker -y
+   ```
+      ```bash
+   sudo systemctl start docker
+   ```
+   ```bash
+   sudo systemctl enable docker
+   ```
 
 1. Update the server and **install Java 17**:
 
