@@ -122,7 +122,7 @@ Run these commands on the **Jenkins server instance**:
    - Select **Git**.
    - Provide the repository URL:
      ```
-     https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
+     https://github.com/DevopsProjects05/Sample-E-Commerce-Project.git
      ```
    - Branch: `main`
 
@@ -257,11 +257,11 @@ Run these commands on the **SonarQube server instance**:
 
 This guide ensures a complete setup of Jenkins and SonarQube for automated code analysis and continuous integration. Let me know if you encounter any issues!
 
-**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker)**
+**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker)**
 
-**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker-Compose)**
+**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker-Compose)**
 
-**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Terraform)**
+**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Terraform)**
 
 
 

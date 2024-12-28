@@ -128,8 +128,8 @@ Ensure the instance has sufficient resources to run SonarQube smoothly.
 
 1. Clone the project repository:
    ```bash
-   git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
-   cd Sample-E-Commers-Project/
+   git clone https://github.com/DevopsProjects05/Sample-E-Commerce-Project.git
+   cd Sample-E-Commerce-Project/
    ```
 
 ### **Create the `sonar-project.properties` File**
@@ -202,8 +202,8 @@ Ensure the instance has sufficient resources to run SonarQube smoothly.
 ### Contributing
 Feel free to fork this repository and submit pull requests. Contributions are welcome!
 
-**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker)**
+**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker)**
 
-**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker-Compose)**
+**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker-Compose)**
 
-**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Terraform)**
+**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Terraform)**

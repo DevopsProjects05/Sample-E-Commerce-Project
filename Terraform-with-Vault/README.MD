@@ -134,7 +134,7 @@ Configure AWS Root Credentials:
 ## 2. Setting Up Terraform
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project
+    git clone https://github.com/DevopsProjects05/Sample-E-Commerce-Project.git
     ```
     ```bash
     cd Terraform-with-Vault

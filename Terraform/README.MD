@@ -34,10 +34,10 @@ This repository contains Terraform code to provision an **AWS EC2 instance** run
 
 ### **1. Clone the Repository**
 ```bash
-git git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project
+git git clone https://github.com/DevopsProjects05/Sample-E-Commerce-Project
 ```
 ```bash
-cd Sample-E-Commers-Project/
+cd Sample-E-Commerce-Project/
 ```
 # 2. Update Terraform Variables
 Create a `variables.tf` file with the following content:
@@ -133,6 +133,6 @@ terraform validate
 
 Let me know if you'd like further modifications or explanations! 🚀
 
-**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker)**
+**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker)**
 
-**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker-Compose)**
+**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker-Compose)**

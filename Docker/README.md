@@ -1,6 +1,6 @@
-# Sample E-commerce Application Deployment Using Docker
+# Sample E-Commerce Application Deployment Using Docker
 
-This guide will help you deploy the **Sample E-commerce Application** using Docker on an EC2 instance.
+This guide will help you deploy the **Sample E-Commerce Application** using Docker on an EC2 instance.
 
 ---
 
@@ -76,11 +76,11 @@ sudo systemctl enable docker
 **Clone the Repository**
 - Clone the project repository to your instance
 ```bash
-git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
+git clone https://github.com/DevopsProjects05/Sample-E-Commerce-Project.git
 ```
 - Navigate to the Docker directory
 ```bash
-cd /root/Sample-E-Commers-Project/Docker
+cd Sample-E-Commerce-Project/Docker
 ```
 **Build the Docker Image**
 ```bash
@@ -122,7 +122,7 @@ Feel free to fork this repository and submit pull requests. Contributions are we
 **`This **README.md** provides all necessary details to deploy your project using Docker. Let me know if you want to add more specific details or make further modifications! 🚀 `**
 
 
-**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker-Compose)**
+**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker-Compose)**
 
-**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Terraform)**
+**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Terraform)**
 

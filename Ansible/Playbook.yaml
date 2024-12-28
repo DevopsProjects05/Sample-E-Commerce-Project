@@ -6,7 +6,7 @@
   vars:
     work_dir: "/usr/share/nginx/html"  # Default working directory for NGINX
     nginx_conf_path: "/etc/nginx/nginx.conf"  # Path to NGINX configuration file
-    app_repo: "https://github.com/DevopsProjects05/Sample-E-Commers-Project"  # Git repository URL for the project
+    app_repo: "https://github.com/DevopsProjects05/Sample-E-Commerce-Project"  # Git repository URL for the project
 
   tasks:
     # Update package manager cache to ensure latest package information

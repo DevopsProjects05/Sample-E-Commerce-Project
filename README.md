@@ -102,7 +102,7 @@ This is a **Sample e-commerce project** designed to showcase core **DevOps princ
 ## **Project Structure**
 ---
 ```
-Sample-E-Commers-Project/ 
+Sample-E-Commerce-Project/ 
 ├── index.html                          # Main HTML file for the webpage 
 ├── public/                             # Static assets 
   ├── styles.css                        # CSS styles 
@@ -154,10 +154,10 @@ yum install git -y
 
 ### **Clone the Repository**
 ```bash
-git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project.git
+git clone https://github.com/DevopsProjects05/Sample-E-Commerce-Project.git
 ```
 ```bash
-cd Sample-E-Commers-Project/
+cd Sample-E-Commerce-Project/
 ```
 ### **NGINX Setup**
 
@@ -259,8 +259,8 @@ Ensure that port 80 (HTTP) is open to allow incoming traffic.
 ### Contributing
 Feel free to fork this repository and submit pull requests. Contributions are welcome!
 
-**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker)**
+**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker)**
 
-**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Docker-Compose)**
+**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker-Compose)**
 
-**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commers-Project/tree/main/Terraform)**
+**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Terraform)**

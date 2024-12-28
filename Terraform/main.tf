@@ -17,8 +17,8 @@ sudo yum update -y
 sudo yum install -y git
 
 # Clone the GitHub repository
-git clone https://github.com/DevopsProjects05/Sample-E-Commers-Project
-cd Sample-E-Commers-Project/
+git clone https://github.com/DevopsProjects05/Sample-E-Commerce-Project
+cd Sample-E-Commerce-Project/
 
 # Install and start NGINX
 sudo yum install nginx -y
