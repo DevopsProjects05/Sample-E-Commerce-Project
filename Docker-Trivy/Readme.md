@@ -12,10 +12,10 @@ This project demonstrates how to automate vulnerability scanning of Docker image
 - **Email Notifications**: Developers are notified of scan results via email.
 - **Artifact Archival**: Trivy reports are archived in Jenkins for easy access.
 
----
+
 ![](/Docker-Trivy/Docker-Trivy.jpg)
 
----
+
 
 ## Setup Instructions
 
