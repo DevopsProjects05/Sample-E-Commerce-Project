@@ -1,54 +1,51 @@
 
 # Automating Docker Image Security Scanning with Jenkins and Trivy
 
-This project demonstrates how to automate vulnerability scanning of Docker images using Trivy integrated with Jenkins. It includes steps to configure an EC2 instance, install prerequisites, set up Jenkins, and create a pipeline to build Docker images, scan them with Trivy, and archive the reports.
+This project demonstrates how to automate vulnerability scanning of Docker images using Trivy integrated with Jenkins. It includes steps to configure an EC2 instance, install prerequisites, set up Jenkins, and create a pipeline to build Docker images, scan them with Trivy, and archive the reports. Additionally, the pipeline deploys the secure image using NGINX to serve the application to end users.
 
 ---
 
 ## Features
-
 - **Automated Docker Builds**: Jenkins automates the creation of Docker images.
 - **Vulnerability Scanning**: Trivy scans Docker images for vulnerabilities and generates reports.
+- **Secure Deployment**: The pipeline deploys the secure Docker image using NGINX.
 - **Email Notifications**: Developers are notified of scan results via email.
 - **Artifact Archival**: Trivy reports are archived in Jenkins for easy access.
 
 
 ![](/Docker-Trivy/Docker-Trivy.jpg)
 
-
-
 ## Setup Instructions
 
-### 1. Create an EC2 Instance
+## **1. Create EC2 Instances**
 
-- Launch an Amazon EC2 instance with minimal configuration (e.g., t2.medium).
-- Use Amazon Linux 2 as the operating system.
+1. Launch two **Amazon Linux EC2 instances** with the following specifications:
+   - **Instance Type**: `t2.medium`
+   - **Security Group**:
+     - Port 22 (SSH)
+     - Port 8080 (Jenkins)
+     
 
 ### 2. Install Prerequisites
-
 #### a. Connect to the Instance
-
 - Use SSH to connect:
   ```bash
   ssh -i your-key.pem ec2-user@<instance-ip>
   ```
 
 #### b. Update the System
-
 - Update the system packages:
   ```bash
   sudo yum update -y
   ```
 
 #### c. Install Git
-
 - Install Git for source code management:
   ```bash
   sudo yum install git -y
   ```
 
 #### d. Install Docker
-
 1. Install Docker:
    ```bash
    sudo yum install docker -y
@@ -70,7 +67,6 @@ This project demonstrates how to automate vulnerability scanning of Docker image
    **Why?**: Adding the `ec2-user` to the Docker group allows the user to execute Docker commands without `sudo`. This simplifies automation scripts and Jenkins integration.
 
 #### e. Install Java
-
 - Install Java (required for Jenkins):
   ```bash
   amazon-linux-extras enable corretto17
@@ -78,39 +74,30 @@ This project demonstrates how to automate vulnerability scanning of Docker image
   ```
 
 #### f. Install Jenkins
-
 1. Add the Jenkins repository and key:
-
    ```bash
    sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
    sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io-2023.key
    ```
-
 2. Install Jenkins:
-
    ```bash
    sudo yum install jenkins -y
    sudo systemctl enable jenkins
    sudo systemctl start jenkins
    ```
-
 3. Add Jenkins to the Docker group:
-
    ```bash
    sudo usermod -aG docker jenkins
    ```
-
    **Why?**: Jenkins requires access to the Docker daemon to execute Docker commands. Adding Jenkins to the Docker group grants these permissions.
 
 4. Restart Jenkins and Docker:
-
    ```bash
    sudo systemctl restart jenkins
    sudo systemctl restart docker
    ```
 
 #### g. Install Trivy
-
 1. Install Trivy:
    ```bash
    curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh
@@ -124,7 +111,6 @@ This project demonstrates how to automate vulnerability scanning of Docker image
 ---
 
 ### 3. Access Jenkins
-
 1. Navigate to Jenkins in your browser:
    ```
    http://<instance-ip>:8080
@@ -137,17 +123,7 @@ This project demonstrates how to automate vulnerability scanning of Docker image
 
 ---
 
-### 4. Install Jenkins Plugins
-
-- Install the following plugins:
-  - **Git Plugin**
-  - **Docker Plugin**
-  
-
----
-
-### 5. Update Jenkins Environment Variables
-
+### 4. Update Jenkins Environment Variables
 1. If Trivy is not accessible, update the PATH environment variable:
    - Go to **Manage Jenkins** → **Configure System** → **Global Properties**.
    - Add the following PATH:
@@ -161,22 +137,23 @@ This project demonstrates how to automate vulnerability scanning of Docker image
 
 ---
 
+### 5. Install Jenkins Plugins
+- Install the following plugins:
+  - **Git Plugin**
+  - **Docker Plugin**
+  - **Pipeline Plugin**
 
+---
 
 ### 6. Configure the Jenkins Pipeline
-
 1. Create a **freestyle job** in Jenkins.
-
 2. Use the following GitHub repository:
-
    ```
    https://github.com/DevopsProjects05/Sample-E-Commerce-Project.git
    ```
-
    - Branch: `main`
 
 3. Add the following shell commands in the **Build** section:
-
    ```bash
    cd Docker-Compose
    docker build -t nginx-image .
@@ -184,7 +161,6 @@ This project demonstrates how to automate vulnerability scanning of Docker image
    ```
 
 4. Configure **Post-build Actions**:
-
    - **Archive the Artifacts**:
      ```
      trivy-report-nginx-image.txt
@@ -196,26 +172,34 @@ This project demonstrates how to automate vulnerability scanning of Docker image
 ---
 
 ## Additional Notes
-
 1. **Adding Users to Groups**:
-
-   - **`ec2-user`**\*\* to Docker Group\*\*: Grants non-root users access to Docker commands.
-   - **`jenkins`**\*\* to Docker Group\*\*: Allows Jenkins to interact with the Docker daemon for automation tasks.
+   - **`ec2-user` to Docker Group**: Grants non-root users access to Docker commands.
+   - **`jenkins` to Docker Group**: Allows Jenkins to interact with the Docker daemon for automation tasks.
 
 2. **Trivy Scan**:
-
    - The Trivy scan checks for vulnerabilities in Docker images.
    - The `--exit-code 1` option ensures the build fails if high or critical vulnerabilities are found.
+
+3. **NGINX Deployment**:
+   - Once the Docker image passes the Trivy scan, it is deployed using NGINX to serve the application to end users.
 
 ---
 
 ## Project Output
-
 - The Trivy report (`trivy-report-nginx-image.txt`) includes:
   - Vulnerability details categorized by severity (LOW, MEDIUM, HIGH, CRITICAL).
   - Recommendations for remediation.
+- The secure Docker image is deployed using NGINX and serves the application to end users.
 
 ---
+### Contributing
+Feel free to fork this repository and submit pull requests. Contributions are welcome!
+
+**[Click here to Deploy Sample E-commerce Application Using Docker](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker)**
+
+**[Click here to Deploy Sample E-commerce Application Using Docker-Compose](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Docker-Compose)**
+
+**[Click here to Deploy Sample E-commerce Application Using Terraform ](https://github.com/DevopsProjects05/Sample-E-Commerce-Project/tree/main/Terraform)**
 
 
 
