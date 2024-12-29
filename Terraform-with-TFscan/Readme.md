@@ -1,4 +1,16 @@
-# Terraform with TFscan and Jenkins
+# Integrating TFscan with Terraform in Jenkins
+
+
+## Setup Instructions
+
+## Create EC2 Instances
+
+Launch **Amazon Linux EC2 instance** with the following specifications:
+   - **Instance Type**: `t2.medium`
+   - **Security Group**:
+     - Port 22 (SSH)
+     - Port 8080 (Jenkins)
+
 
 ## Install Git
 Install Git using the following command:
