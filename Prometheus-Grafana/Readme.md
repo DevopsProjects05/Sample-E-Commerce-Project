@@ -1,4 +1,4 @@
-## Integrating Prometheus and Grafana with Sample E-Commerce Project
+# Integrating Prometheus and Grafana with Sample E-Commerce Project
 
 
 Prometheus is an open-source systems monitoring and alerting toolkit. In this project, Prometheus is used to scrape and monitor metrics from the NGINX server. It enables you to query and analyze key performance indicators, such as HTTP requests and connection statuses, directly from the server.
