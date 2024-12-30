@@ -1,14 +1,10 @@
 ## Integrating Prometheus and Grafana with Sample E-Commerce Project
 
-Follow the Step-by-Step Guide to Setting Up Your Application with NGINX.
 
-### Link to Project:
+Prometheus is an open-source systems monitoring and alerting toolkit. In this project, Prometheus is used to scrape and monitor metrics from the NGINX server. It enables you to query and analyze key performance indicators, such as HTTP requests and connection statuses, directly from the server.
 
-[Sample E-Commerce Project GitHub Repository](https://github.com/DevopsProjects05/Sample-E-Commerce-Project.git)
 
----
-
-### **Step 1: Set Up the Server**
+###  Set Up the Server
 
 1. **Instance Requirements**:
 
@@ -28,7 +24,15 @@ Follow the Step-by-Step Guide to Setting Up Your Application with NGINX.
 
 ---
 
-### **Step 2: Install Prometheus**
+Follow the Step-by-Step Guide to Setting Up Your Application with NGINX.
+
+### Link to Project:
+
+[Sample E-Commerce Project GitHub Repository](https://github.com/DevopsProjects05/Sample-E-Commerce-Project.git)
+
+---
+
+### Install Prometheus
 
 1. **Download Prometheus**:
    ```bash
@@ -55,7 +59,7 @@ Follow the Step-by-Step Guide to Setting Up Your Application with NGINX.
 
 ---
 
-### **Step 3: Set Up NGINX Metrics Exporter**
+### Set Up NGINX Metrics Exporter
 
 1. **Download and Extract the Exporter**:
    ```bash
@@ -109,7 +113,7 @@ Follow the Step-by-Step Guide to Setting Up Your Application with NGINX.
 
 ---
 
-### **Step 4: Configure Prometheus to Scrape Metrics**
+### Configure Prometheus to Scrape Metrics
 
 1. **Edit Prometheus Configuration**:
    Open the `prometheus.yml` file and Remove existing configurations if indentation issues arise, and replace with the following:
@@ -155,7 +159,7 @@ Follow the Step-by-Step Guide to Setting Up Your Application with NGINX.
 
 ---
 
-### **Step 5: Verify the Integration**
+### Verify the Integration
 
 1. **Access Prometheus UI**:
    - Open: `http://<your-server-ip>:9090`.
@@ -180,11 +184,12 @@ Follow the Step-by-Step Guide to Setting Up Your Application with NGINX.
 
 ### **Steps to Integrate Grafana with Prometheus**
 
-Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you can set it up and use it:
+Grafana is a visualization tool that integrates with Prometheus to display metrics in interactive dashboards. By using Grafana, you can create custom dashboards and gain deeper insights into the performance and behavior of your NGINX server. In this project, Grafana provides real-time visualization of Prometheus metrics.
+
 
 ---
 
-### **Step 1: Install Grafana**
+### Install Grafana
 
 1. **Download and Install Grafana**:
    - On CentOS/Red Hat:
@@ -214,7 +219,7 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 
 ---
 
-### **Step 2: Add Prometheus as a Data Source**
+### Add Prometheus as a Data Source
 
 1. Log in to Grafana.
 
@@ -232,7 +237,7 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 
 ---
 
-### **Step 3: Import a Pre-Built Dashboard**
+### Import a Pre-Built Dashboard
 
 1. Go to **Dashboards > toggle menu > dashboards > new> Import** in Grafana.
 
@@ -247,7 +252,7 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 
 
 ---
-#### Screenshot of Prometheus:
+#### Screenshots of Prometheus:
 
 ##### Screenshot 1:
 
@@ -258,10 +263,14 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 
 ![](/Prometheus-Grafana/grafana-prmo2.jpg)
 
+#### Screenshot of Nginx:
+
+![](/Prometheus-Grafana/grafana-nginx.jpg)
 
 
 
-### **Step 4: Visualize Metrics**
+
+### Visualize Metrics
 
 1. Open the imported dashboard.
 2. Explore metrics like:
@@ -273,7 +282,7 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 
 ---
 
-### **Step 5: Save and Share Dashboards**
+### Save and Share Dashboards
 
 1. Save the dashboard for future use:
    - Click the **Save** icon in Grafana.
@@ -292,3 +301,4 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 - Metrics like nginx_http_requests_total can be viewed in Prometheus.
 
 - Grafana provides a professional-looking dashboard to visualize NGINX metrics in real time.
+
