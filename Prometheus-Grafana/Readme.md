@@ -272,15 +272,24 @@ Grafana is a visualization tool that integrates with Prometheus to display metri
 ##### Screenshot 1:
 
 
-![](/Prometheus-Grafana/grafana-prmo1.jpg)
+<div align="center">
+  <img src="/Prometheus-Grafana/grafana-prmo1.jpg" alt="Grafana-Prometheus Dashboard">
+</div>
+
 
 ##### Screenshot 2:
 
-![](/Prometheus-Grafana/grafana-prmo2.jpg)
+<div align="center">
+  <img src="/Prometheus-Grafana/grafana-prmo2.jpg" alt="Grafana-Prometheus Dashboard 2">
+</div>
+
 
 #### Screenshot of Nginx:
 
-![](/Prometheus-Grafana/grafana-nginx.jpg)
+<div align="center">
+  <img src="/Prometheus-Grafana/grafana-nginx.jpg" alt="Grafana-NGINX Dashboard">
+</div>
+
 
 
 
