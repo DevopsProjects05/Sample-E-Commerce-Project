@@ -5,7 +5,10 @@ Prometheus is an open-source systems monitoring and alerting toolkit. In this pr
 
 ---
 
-   ![](/Prometheus-Grafana/prometheus.png)
+   <div align="center">
+  <img src="/Prometheus-Grafana/prometheus.png" alt="Prometheus Dashboard">
+</div>
+
 
 ---
 
@@ -194,7 +197,10 @@ Grafana is a visualization tool that integrates with Prometheus to display metri
 
 ---
 
-   ![](/Prometheus-Grafana/grafana.png)
+   <div align="center">
+  <img src="/Prometheus-Grafana/grafana.png" alt="Grafana Dashboard">
+</div>
+
 
 ---
 
