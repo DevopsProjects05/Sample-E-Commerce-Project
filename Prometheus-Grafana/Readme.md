@@ -217,17 +217,18 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 ### **Step 2: Add Prometheus as a Data Source**
 
 1. Log in to Grafana.
-2. Navigate to **Configuration > Data Sources**.
-3. Click **Add Data Source**.
-![](/grafana-dashboard)
-4. Select **Prometheus**.
-![](/Prometheus-Grafana/grafana-datasource.jpg)
-5. Enter your Prometheus URL:
+
+    ![](/Prometheus-Grafana/grafana-dashboard.jpg)
+1. Navigate to **Configuration > Data Sources**.
+2. Click **Add Data Source**.
+3. Select **Prometheus**.
+ ![](/Prometheus-Grafana/grafana-datasource.jpg)
+1. Enter your Prometheus URL:
    ```
    http://<your-server-ip>:9090
    ```
    ![](/Prometheus-Grafana/grafana-prometheus.jpg)
-6. Click **Save & Test** to verify the connection.
+2. Click **Save & Test** to verify the connection.
 
 ---
 
@@ -235,7 +236,7 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 
 1. Go to **Dashboards > toggle menu > dashboards > new> Import** in Grafana.
 
-![](/Prometheus-Grafana/grafana-prebuild.jpg)
+   ![](/Prometheus-Grafana/grafana-prebuild.jpg)
 
 
 1. Enter a **Dashboard ID**:
