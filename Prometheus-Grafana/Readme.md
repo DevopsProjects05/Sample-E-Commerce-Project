@@ -3,6 +3,12 @@
 
 Prometheus is an open-source systems monitoring and alerting toolkit. In this project, Prometheus is used to scrape and monitor metrics from the NGINX server. It enables you to query and analyze key performance indicators, such as HTTP requests and connection statuses, directly from the server.
 
+---
+
+ 
+ ![](/Prometheus-Grafana/prometheus.png)
+
+---
 
 ###  Set Up the Server
 
@@ -182,10 +188,14 @@ Follow the Step-by-Step Guide to Setting Up Your Application with NGINX.
 
 
 
-### **Steps to Integrate Grafana with Prometheus**
+# **Steps to Integrate Grafana with Prometheus**  
 
 Grafana is a visualization tool that integrates with Prometheus to display metrics in interactive dashboards. By using Grafana, you can create custom dashboards and gain deeper insights into the performance and behavior of your NGINX server. In this project, Grafana provides real-time visualization of Prometheus metrics.
 
+
+---
+
+![](/Prometheus-Grafana/grafana.png)
 
 ---
 
