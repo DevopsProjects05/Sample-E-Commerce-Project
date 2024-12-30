@@ -210,7 +210,7 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
      - Username: `admin`
      - Password: `admin` (you will be prompted to change it).
 
-    ![](/grafana-login.jpg)
+    ![](/Prometheus-Grafana/grafana-login.jpg)
 
 ---
 
@@ -221,12 +221,12 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 3. Click **Add Data Source**.
 ![](/grafana-dashboard)
 4. Select **Prometheus**.
-![](/grafana-datasource.jpg)
+![](/Prometheus-Grafana/grafana-datasource.jpg)
 5. Enter your Prometheus URL:
    ```
    http://<your-server-ip>:9090
    ```
-   ![](/grafana-prometheus.jpg)
+   ![](/Prometheus-Grafana/grafana-prometheus.jpg)
 6. Click **Save & Test** to verify the connection.
 
 ---
@@ -235,7 +235,7 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 
 1. Go to **Dashboards > toggle menu > dashboards > new> Import** in Grafana.
 
-![](/grafana-prebuild.jpg)
+![](/Prometheus-Grafana/grafana-prebuild.jpg)
 
 
 1. Enter a **Dashboard ID**:
@@ -251,11 +251,11 @@ Grafana is a powerful tool for visualizing Prometheus metrics. Here’s how you 
 ##### Screenshot 1:
 
 
-![](/grafana-prmo1.jpg)
+![](/Prometheus-Grafana/grafana-prmo1.jpg)
 
 ##### Screenshot 2:
 
-![](/grafana-prmo2.jpg)
+![](/Prometheus-Grafana/grafana-prmo2.jpg)
 
 
 
