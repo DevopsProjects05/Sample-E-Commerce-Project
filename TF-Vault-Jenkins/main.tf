@@ -23,7 +23,7 @@ terraform {
 }
 
 provider "vault" {
-  address = "http://13.233.204.51:8200/"
+  address = "http://3.110.213.160:8200/"
   token   = var.vault_token
 }
 

@@ -1,5 +1,12 @@
-#variable "aws_access_key" {}
-#variable "aws_secret_key" {}
+variable "aws_access_key" {
+  description = "AWS Access Key for authentication"
+  type        = string
+}
+
+variable "aws_secret_key" {
+  description = "AWS Secret Key for authentication"
+  type        = string
+}
 
 variable "region" {
   default = "ap-south-1" # Replace with your desired AWS region
