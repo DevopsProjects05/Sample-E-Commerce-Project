@@ -8,6 +8,7 @@ variable "aws_secret_key" {
   type        = string
 }
 
+
 variable "region" {
   default = "ap-south-1" # Replace with your desired AWS region
 }
