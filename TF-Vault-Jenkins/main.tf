@@ -9,6 +9,8 @@ data "vault_kv_secret_v2" "aws_secrets" {
 
 provider "aws" {
   region     = var.region
+  access_key = data.vault_kv_secret_v2.aws_secrets.data["aws_access_key"]
+  secret_key = data.vault_kv_secret_v2.aws_secrets.data["aws_secret_key"]
   
 }
 
