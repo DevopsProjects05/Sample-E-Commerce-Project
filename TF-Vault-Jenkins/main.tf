@@ -2,10 +2,11 @@
 
 
 
-data "vault_kv_secret_v2" "aws_secrets" {
+/*data "vault_kv_secret_v2" "aws_secrets" {
   mount = "secret"          # Mount point of the secrets engine
   name  = "aws"             # Key name under the mount
 }
+*/
 
 provider "aws" {
   region     = var.region
