@@ -24,7 +24,7 @@ terraform {
 
 provider "vault" {
   address = "http://3.110.213.160:8200/"
-  
+  token = var.vault_token
 }
 
 

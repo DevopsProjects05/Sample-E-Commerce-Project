@@ -13,3 +13,10 @@ variable "key_pair" {
 variable "ami" {
   default = "ami-0fd05997b4dff7aac"    #Replace with your ami id
 }
+
+variable "vault_token" {
+  default = "authenticate with vault" 
+  type = string
+
+  
+}
