@@ -1,5 +1,5 @@
-variable "aws_access_key" {}
-variable "aws_secret_key" {}
+#variable "aws_access_key" {}
+#variable "aws_secret_key" {}
 
 variable "region" {
   default = "ap-south-1" # Replace with your desired AWS region
@@ -12,4 +12,9 @@ variable "key_pair" {
 
 variable "ami" {
   default = "ami-0fd05997b4dff7aac"    #Replace with your ami id
+}
+
+variable "vault_token" {
+  default = "hvs.XFWZreTBOPh3FN0KeIrbZ8TF" # Replace with your vault token
+  
 }

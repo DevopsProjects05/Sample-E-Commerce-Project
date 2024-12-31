@@ -1,8 +1,33 @@
+
+
+
+
+data "vault_kv_secret_v2" "aws_secrets" {
+  mount = "secret"          # Mount point of the secrets engine
+  name  = "aws"             # Key name under the mount
+}
+
 provider "aws" {
   region     = var.region
-  access_key = var.aws_access_key
-  secret_key = var.aws_access_key
+  access_key = data.vault_kv_secret_v2.aws_secrets.data["access_key"]
+  secret_key = data.vault_kv_secret_v2.aws_secrets.data["secret_key"]
 }
+
+terraform {
+  required_providers {
+    vault = {
+      source  = "hashicorp/vault"
+      version = "~> 3.0"
+    }
+  }
+}
+
+provider "vault" {
+  address = "http://13.233.204.51:8200/"
+  token   = var.vault_token
+}
+
+
 
 resource "aws_instance" "web_server" {
   ami                    = var.ami
