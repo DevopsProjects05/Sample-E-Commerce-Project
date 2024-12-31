@@ -13,6 +13,7 @@ provider "aws" {
   secret_key = var.aws_secret_key
 }
 
+
 terraform {
   required_providers {
     vault = {
