@@ -15,6 +15,6 @@ variable "ami" {
 }
 
 variable "vault_token" {
-  default = "hvs.XFWZreTBOPh3FN0KeIrbZ8TF" # Replace with your vault token
-  
+  description = "Token to authenticate with Vault"
+  type        = string
 }
