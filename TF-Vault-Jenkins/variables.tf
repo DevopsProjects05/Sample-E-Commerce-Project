@@ -34,7 +34,7 @@ variable "vault_token" {
 
 
 
-variable "aws_access_key" {
+/*variable "aws_access_key" {
   description = "Dynamically generated AWS Access Key"
   type        = string
 }
@@ -58,7 +58,9 @@ variable "vault_token" {
   type        = string
 }
 
+*/
+
 variable "region" {
   description = "AWS region for Terraform operations"
-  default     = "us-east-1"
+  default     = "ap-south-1"
 }
