@@ -9,12 +9,14 @@
 */
 
 provider "aws" {
-  region     = var.region
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
-  
+  region     = "ap-south-1"    ## Replace with your region
+  access_key = data.vault_generic_secret.aws_creds.data["access_key"]
+  secret_key = data.vault_generic_secret.aws_creds.data["secret_key"]
 }
 
+data "vault_generic_secret" "aws_creds" {
+  path = "aws/creds/my-role"
+}
 
 terraform {
   required_providers {
