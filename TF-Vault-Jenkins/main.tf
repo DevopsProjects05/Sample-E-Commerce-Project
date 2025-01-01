@@ -9,13 +9,9 @@
 */
 
 provider "aws" {
-  region     = "ap-south-1"    ## Replace with your region
-  access_key = data.vault_generic_secret.aws_creds.data["access_key"]
-  secret_key = data.vault_generic_secret.aws_creds.data["secret_key"]
-}
-
-data "vault_generic_secret" "aws_creds" {
-  path = "aws/creds/my-role"
+  region     = "ap-south-1"    # Replace with your AWS region
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 }
 
 terraform {
@@ -29,7 +25,7 @@ terraform {
 
 provider "vault" {
   address = "http://3.110.213.160:8200/"
-  #token = var.vault_token
+  token = var.vault_token
 }
 
 

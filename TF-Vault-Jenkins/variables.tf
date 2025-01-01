@@ -34,10 +34,16 @@ variable "vault_token" {
 
 
 
-/*variable "aws_access_key" {
-  description = "Dynamically generated AWS Access Key"
+variable "aws_access_key" {
+  description = "AWS Access Key for authentication"
   type        = string
 }
+
+variable "aws_secret_key" {
+  description = "AWS Secret Key for authentication"
+  type        = string
+}
+
 
 variable "key_pair" {
   description = "The name of the AWS key pair for SSH access"
@@ -48,29 +54,12 @@ variable "ami" {
   default = "ami-0fd05997b4dff7aac"    #Replace with your ami id
 }
 
-variable "aws_secret_key" {
-  description = "Dynamically generated AWS Secret Key"
-  type        = string
-}
+
 
 variable "vault_token" {
   description = "Vault token to authenticate with Vault server"
   type        = string
 }
 
-*/
-
-variable "region" {
-  description = "AWS region for Terraform operations"
-  default     = "ap-south-1"
-}
-
-variable "ami" {
-  default = "ami-0fd05997b4dff7aac"    #Replace with your ami id
-}
 
 
-variable "key_pair" {
-  description = "The name of the AWS key pair for SSH access"
-  default     = "DevOps_Practice" # Replace with your key pair
-}
