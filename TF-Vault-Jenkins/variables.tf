@@ -64,3 +64,13 @@ variable "region" {
   description = "AWS region for Terraform operations"
   default     = "ap-south-1"
 }
+
+variable "ami" {
+  default = "ami-0fd05997b4dff7aac"    #Replace with your ami id
+}
+
+
+variable "key_pair" {
+  description = "The name of the AWS key pair for SSH access"
+  default     = "DevOps_Practice" # Replace with your key pair
+}
