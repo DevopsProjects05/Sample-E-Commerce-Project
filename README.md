@@ -19,7 +19,7 @@ This is a **Sample e-commerce project** designed to showcase core **DevOps princ
   - **SonarQube** - Code analysis and quality assurance.
   - **Ansible** - Configuration management.
   - **Trivy** - Security and Vulnerability Scanning
-  - **TSEC (Terraform Security Checks)** -  Infrastructure Security.
+  - **TSEC (Terraform Security Checks)** -  Infrastructure Security...
 
 ---
 
